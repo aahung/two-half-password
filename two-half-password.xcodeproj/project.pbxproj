@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D3A3CC1C8369B0C0A251D1 /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
+		2C23DB10763C86FE179482A8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EEF816557517CC951F416B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		36B56C113B340DA31EDAF0DE /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		AE132115212C99F2528F7EBB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EEF816557517CC951F416B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */; };
+		B21E39421B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */; };
+		B21E39471B2CCD2300C87EB1 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */; };
+		B21E39481B2CCD3000C87EB1 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */; };
+		B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */; };
+		B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBC01B2BF63C0075C372 /* ViewController.swift */; };
+		B264BBC31B2BF63C0075C372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B264BBC21B2BF63C0075C372 /* Assets.xcassets */; };
+		B264BBC61B2BF63C0075C372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B264BBC41B2BF63C0075C372 /* Main.storyboard */; };
+		B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */; };
+		B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
+		B26BB8001B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
+		B2FE32D21B2BFBDB00020381 /* UnlockKeysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B264BBCD1B2BF63C0075C372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B264BBB31B2BF63C0075C372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B264BBBA1B2BF63C0075C372;
+			remoteInfo = "two-half-password";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083F017C9318A9B0BD9CA45A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		59C5B0850FD5DA92BD8FA233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		93EEF816557517CC951F416B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptionKeys.swift; path = Models/EncryptionKeys.swift; sourceTree = "<group>"; };
+		B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
+		B264BBBB1B2BF63C0075C372 /* two-half-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "two-half-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B264BBC01B2BF63C0075C372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B264BBC21B2BF63C0075C372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B264BBC51B2BF63C0075C372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B264BBC71B2BF63C0075C372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B264BBCC1B2BF63C0075C372 /* two-half-passwordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "two-half-passwordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = two_half_passwordTests.swift; sourceTree = "<group>"; };
+		B264BBD21B2BF63C0075C372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B264BBDB1B2BF63C0075C372 /* two_half_passwordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = two_half_passwordUITests.swift; sourceTree = "<group>"; };
+		B264BBDD1B2BF63C0075C372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26BB7FE1B2D10570074FCE3 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnlockKeysTest.swift; path = pre/UnlockKeysTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B264BBB81B2BF63C0075C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21E39471B2CCD2300C87EB1 /* libcommonCrypto.tbd in Frameworks */,
+				2C23DB10763C86FE179482A8 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B264BBC91B2BF63C0075C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21E39481B2CCD3000C87EB1 /* libcommonCrypto.tbd in Frameworks */,
+				08D3A3CC1C8369B0C0A251D1 /* (null) in Frameworks */,
+				36B56C113B340DA31EDAF0DE /* (null) in Frameworks */,
+				AE132115212C99F2528F7EBB /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A61DBF3774FECE8A0AF531A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */,
+				93EEF816557517CC951F416B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B21E393F1B2CA49800C87EB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */,
+				B26BB7FE1B2D10570074FCE3 /* Crypto.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B21E39441B2CC40D00C87EB1 /* Bridgings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Bridgings;
+			sourceTree = "<group>";
+		};
+		B264BBB21B2BF63C0075C372 = {
+			isa = PBXGroup;
+			children = (
+				B264BBBD1B2BF63C0075C372 /* two-half-password */,
+				B264BBCF1B2BF63C0075C372 /* two-half-passwordTests */,
+				B264BBDA1B2BF63C0075C372 /* two-half-passwordUITests */,
+				B264BBBC1B2BF63C0075C372 /* Products */,
+				B81C59DFD46910B2FB48459D /* Pods */,
+				A61DBF3774FECE8A0AF531A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B264BBBC1B2BF63C0075C372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B264BBBB1B2BF63C0075C372 /* two-half-password.app */,
+				B264BBCC1B2BF63C0075C372 /* two-half-passwordTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B264BBBD1B2BF63C0075C372 /* two-half-password */ = {
+			isa = PBXGroup;
+			children = (
+				B21E393F1B2CA49800C87EB1 /* Models */,
+				B21E39441B2CC40D00C87EB1 /* Bridgings */,
+				B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */,
+				B264BBC01B2BF63C0075C372 /* ViewController.swift */,
+				B264BBC21B2BF63C0075C372 /* Assets.xcassets */,
+				B264BBC41B2BF63C0075C372 /* Main.storyboard */,
+				B264BBC71B2BF63C0075C372 /* Info.plist */,
+			);
+			path = "two-half-password";
+			sourceTree = "<group>";
+		};
+		B264BBCF1B2BF63C0075C372 /* two-half-passwordTests */ = {
+			isa = PBXGroup;
+			children = (
+				B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */,
+				B264BBD21B2BF63C0075C372 /* Info.plist */,
+				B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */,
+			);
+			path = "two-half-passwordTests";
+			sourceTree = "<group>";
+		};
+		B264BBDA1B2BF63C0075C372 /* two-half-passwordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B264BBDB1B2BF63C0075C372 /* two_half_passwordUITests.swift */,
+				B264BBDD1B2BF63C0075C372 /* Info.plist */,
+			);
+			path = "two-half-passwordUITests";
+			sourceTree = "<group>";
+		};
+		B81C59DFD46910B2FB48459D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				083F017C9318A9B0BD9CA45A /* Pods.debug.xcconfig */,
+				59C5B0850FD5DA92BD8FA233 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B264BBBA1B2BF63C0075C372 /* two-half-password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B264BBE01B2BF63C0075C372 /* Build configuration list for PBXNativeTarget "two-half-password" */;
+			buildPhases = (
+				2710057C2F118D046965E790 /* Check Pods Manifest.lock */,
+				B264BBB71B2BF63C0075C372 /* Sources */,
+				B264BBB81B2BF63C0075C372 /* Frameworks */,
+				B264BBB91B2BF63C0075C372 /* Resources */,
+				AFF8CA88F9C83C59FB3A8E8E /* Copy Pods Resources */,
+				596877A28147F357078E2196 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "two-half-password";
+			productName = "two-half-password";
+			productReference = B264BBBB1B2BF63C0075C372 /* two-half-password.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B264BBCB1B2BF63C0075C372 /* two-half-passwordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B264BBE31B2BF63C0075C372 /* Build configuration list for PBXNativeTarget "two-half-passwordTests" */;
+			buildPhases = (
+				F5E996F088A868BAEC0F9937 /* Check Pods Manifest.lock */,
+				B264BBC81B2BF63C0075C372 /* Sources */,
+				B264BBC91B2BF63C0075C372 /* Frameworks */,
+				B264BBCA1B2BF63C0075C372 /* Resources */,
+				5B785770CD373B7F00DC4ECD /* Copy Pods Resources */,
+				CF186450B9EFDA61CA9AA796 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B264BBCE1B2BF63C0075C372 /* PBXTargetDependency */,
+			);
+			name = "two-half-passwordTests";
+			productName = "two-half-passwordTests";
+			productReference = B264BBCC1B2BF63C0075C372 /* two-half-passwordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B264BBB31B2BF63C0075C372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ParseCool;
+				TargetAttributes = {
+					B264BBBA1B2BF63C0075C372 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B264BBCB1B2BF63C0075C372 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B264BBBA1B2BF63C0075C372;
+					};
+				};
+			};
+			buildConfigurationList = B264BBB61B2BF63C0075C372 /* Build configuration list for PBXProject "two-half-password" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B264BBB21B2BF63C0075C372;
+			productRefGroup = B264BBBC1B2BF63C0075C372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B264BBBA1B2BF63C0075C372 /* two-half-password */,
+				B264BBCB1B2BF63C0075C372 /* two-half-passwordTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B264BBB91B2BF63C0075C372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B264BBC31B2BF63C0075C372 /* Assets.xcassets in Resources */,
+				B264BBC61B2BF63C0075C372 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B264BBCA1B2BF63C0075C372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2710057C2F118D046965E790 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		596877A28147F357078E2196 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B785770CD373B7F00DC4ECD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF8CA88F9C83C59FB3A8E8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF186450B9EFDA61CA9AA796 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E996F088A868BAEC0F9937 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B264BBB71B2BF63C0075C372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */,
+				B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
+				B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */,
+				B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B264BBC81B2BF63C0075C372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26BB8001B2D10570074FCE3 /* Crypto.swift in Sources */,
+				B21E39421B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
+				B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */,
+				B2FE32D21B2BFBDB00020381 /* UnlockKeysTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B264BBCE1B2BF63C0075C372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B264BBBA1B2BF63C0075C372 /* two-half-password */;
+			targetProxy = B264BBCD1B2BF63C0075C372 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B264BBC41B2BF63C0075C372 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B264BBC51B2BF63C0075C372 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B264BBDE1B2BF63C0075C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_OBJC_BRIDGING_HEADER = "two-half-password/Bridgings/CommonCrypto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B264BBDF1B2BF63C0075C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_OBJC_BRIDGING_HEADER = "two-half-password/Bridgings/CommonCrypto-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B264BBE11B2BF63C0075C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083F017C9318A9B0BD9CA45A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "two-half-password/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B264BBE21B2BF63C0075C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C5B0850FD5DA92BD8FA233 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "two-half-password/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B264BBE41B2BF63C0075C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083F017C9318A9B0BD9CA45A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "two-half-passwordTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-passwordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/two-half-password.app/Contents/MacOS/two-half-password";
+			};
+			name = Debug;
+		};
+		B264BBE51B2BF63C0075C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C5B0850FD5DA92BD8FA233 /* Pods.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "two-half-passwordTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-passwordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/two-half-password.app/Contents/MacOS/two-half-password";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B264BBB61B2BF63C0075C372 /* Build configuration list for PBXProject "two-half-password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B264BBDE1B2BF63C0075C372 /* Debug */,
+				B264BBDF1B2BF63C0075C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B264BBE01B2BF63C0075C372 /* Build configuration list for PBXNativeTarget "two-half-password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B264BBE11B2BF63C0075C372 /* Debug */,
+				B264BBE21B2BF63C0075C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B264BBE31B2BF63C0075C372 /* Build configuration list for PBXNativeTarget "two-half-passwordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B264BBE41B2BF63C0075C372 /* Debug */,
+				B264BBE51B2BF63C0075C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B264BBB31B2BF63C0075C372 /* Project object */;
+}
