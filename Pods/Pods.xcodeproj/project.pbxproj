@@ -7,654 +7,883 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05F8CCA570C876693219BD41 /* Pods-two-half-passwordTests-PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15ECA6CC61ABB249C68AC292 /* Pods-two-half-passwordTests-PureLayout-dummy.m */; };
-		0BC14C0A88396A47C66FB590 /* Pods-two-half-passwordTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BB4481AD4A60FCFFEE26E5 /* Pods-two-half-passwordTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1413C12B60C58CB9E6C6C327 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1771B293DDB7355B86B2872F /* NSArray+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		14996B298C6F6065FD5E3FCD /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2135028FB436E3618DF264 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22B0AF94E2D887209A7550DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		2BB5A1E7879E535F6636CBB6 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1771B293DDB7355B86B2872F /* NSArray+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		38AF765679DC902146D48836 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E57810CBC7AE053CE83E8F /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43E848AF404699AF1C4CA9CC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78498B6CEEF56451FBDBB1B6 /* Pods-dummy.m */; };
-		44283EAC8151382D906545D1 /* Pods-two-half-passwordTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0ACADF197C084CD72D069A /* Pods-two-half-passwordTests-dummy.m */; };
-		4C3C429C89EC334CEDD34747 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F68C7DC6729DBF9E8C8FB /* ALView+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4FC7062F19D0F2D462767A6F /* Pods-PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 440164A29ADF975FA92913C5 /* Pods-PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58B5AF161C1A6D2B6054201A /* Pods-PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C608F94A9FCC82DF1202EA57 /* Pods-PureLayout-dummy.m */; };
-		59AA6AC27686C024A34C78C4 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 565B8CEFE2735A82AE594500 /* NSLayoutConstraint+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		61B6CFAE4324ED4B21026236 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1771B293DDB7355B86B2872F /* NSArray+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6AA9713F66B7A7EC74791F48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		6BAC4FA749C3E24E2798A983 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9FFAA08B60DC18063313C5 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CDB5988A26003D30E919EA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		73039C0A3E3CE9922B99332C /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2135028FB436E3618DF264 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78981A87D71BA9A2E4EF364A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F68C7DC6729DBF9E8C8FB /* ALView+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		87559749772C1C3D6E9EC030 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD21F05DCBE8C8155EC7F95 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89AC415A87D99F7E2DC45D45 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FA6070EC5E9A68B5E72904 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A33F8D7D6D8D9695D960220 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD21F05DCBE8C8155EC7F95 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93D84B41A02694A7CE513338 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2135028FB436E3618DF264 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9686AA320172C851FFD6584C /* Pods-two-half-password-PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0994FB4831F087B6BE0588E3 /* Pods-two-half-password-PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99F41779253CC3390C70A435 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		9C94CE13489996F5A4D0AE32 /* Pods-two-half-passwordTests-PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0785AE879B95116E891BB53F /* Pods-two-half-passwordTests-PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F68C6B1684C0F533F218AA /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD21F05DCBE8C8155EC7F95 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A373FC1E92D51892D73D2C48 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9FFAA08B60DC18063313C5 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B155E85FCA3061D3E3EC4394 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F68C7DC6729DBF9E8C8FB /* ALView+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B38D60346619766134D73DE7 /* Pods-two-half-password-PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0894A900758891836D16BA9 /* Pods-two-half-password-PureLayout-dummy.m */; };
-		B5BA984EF7A272705816695C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		B7106D3010417BE46C494574 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */; };
-		BBAE0F8F066260D2C1A9EAF3 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 565B8CEFE2735A82AE594500 /* NSLayoutConstraint+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C5A79D07E7C38FB8EA3B79AF /* Pods-two-half-password-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B80586790D4A86CEC00FDE /* Pods-two-half-password-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9497B2451693CDF8B87FA7C /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FA6070EC5E9A68B5E72904 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9F3DA5703E5C0E8E5287AEB /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E57810CBC7AE053CE83E8F /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDD5DFC1C1539C5BF94E96BB /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 565B8CEFE2735A82AE594500 /* NSLayoutConstraint+PureLayout.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D6492FD6343D6E309C729268 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E57810CBC7AE053CE83E8F /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D937830B523182A4D7FF02A4 /* Pods-two-half-password-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 694AE1D29E4815CAE647E75B /* Pods-two-half-password-dummy.m */; };
-		DC5E74D9C1AC8E9582DD444E /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D526669C4CF7B5106D32DB /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E59366306B265061DBF04922 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F60BFCC7BC2F171C55E0C /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6B30F0901865FC6B304E3BA /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D526669C4CF7B5106D32DB /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF8F67B228A15908568A5424 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9FFAA08B60DC18063313C5 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3A313E53455E488AB941E33 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D526669C4CF7B5106D32DB /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFEE092E5002E89D3C58A3A0 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FA6070EC5E9A68B5E72904 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD35E877D54040534734283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
+		0EDE4FAB33F71CF8DDE193D6 /* Pods-SwiftyUserDefaults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E79A2D674E6CA3EFC99C334 /* Pods-SwiftyUserDefaults-dummy.m */; };
+		11ADB1292903891517AB3939 /* Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBE95A495BF8E83AC9E1EBC /* Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AB0170A7F82B721BA3E25D7 /* Pods-two-half-password-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9603E70797275223F25F66 /* Pods-two-half-password-dummy.m */; };
+		4E9A441B545693EF44B149BA /* Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8FC137D28699350E528CBB /* Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m */; };
+		5BE0A955AE3E1735D57B44AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
+		5D9795ED842DA0DB135D01A7 /* Pods-two-half-password-SwiftyUserDefaults-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 506931EA4D0801AFBA26CD43 /* Pods-two-half-password-SwiftyUserDefaults-dummy.m */; };
+		762408308DF01CCD977E490C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
+		B0CE870C3B8EEBD76CB91A4F /* Pods-two-half-passwordTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C02E46F3956FE98D1CD43767 /* Pods-two-half-passwordTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B74807F754163AF4C658F2A1 /* Pods-SwiftyUserDefaults-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDD5FF262F704D85758E51C /* Pods-SwiftyUserDefaults-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D721BEE07B13AC3B6A29E7 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C46DCBCB1E3DFE9F9A615A /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAAAC795A85309803AFA6E76 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D0C4B49A1249E698309D5 /* SwiftyUserDefaults.swift */; };
+		C5520FCD35BC19EB47B4D345 /* Pods-two-half-passwordTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3F20DC12B65FC88046C1BA /* Pods-two-half-passwordTests-dummy.m */; };
+		D16EFE1383D297ED09CAD566 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D0C4B49A1249E698309D5 /* SwiftyUserDefaults.swift */; };
+		D2F9D653D764AE5F3869C598 /* Pods-two-half-password-SwiftyUserDefaults-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D233150648017760FBFFEC44 /* Pods-two-half-password-SwiftyUserDefaults-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D34559DC596386F99FC61475 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFB4A7217C54F2B37C07E0D /* Pods-dummy.m */; };
+		D742E2C9F72CDF25E84276E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
+		DDD11924C746AB7DD6B92F80 /* Pods-two-half-password-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 007ACC554893DEFF24899CB4 /* Pods-two-half-password-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0A2F06058C6BD427C715F82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
+		F71E6D9B5A0DEFF7DBA708AF /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D0C4B49A1249E698309D5 /* SwiftyUserDefaults.swift */; };
+		FA48E644C67152B9867D7DFF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4EE30E97704E75B56AECD19F /* PBXContainerItemProxy */ = {
+		43390B082A06D76DA0077C99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C2728902A54297DD97D61808 /* Project object */;
+			containerPortal = FDB0A30BBABC3DBFD2B5F777 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C88A8200875E02A32C16ECEE;
-			remoteInfo = "Pods-PureLayout";
+			remoteGlobalIDString = 464EF498EA1AA86277371783;
+			remoteInfo = "Pods-two-half-password-SwiftyUserDefaults";
 		};
-		91C24BF7EF9F8BE1264BD5E2 /* PBXContainerItemProxy */ = {
+		6AD43E987861373CB3666B4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C2728902A54297DD97D61808 /* Project object */;
+			containerPortal = FDB0A30BBABC3DBFD2B5F777 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF8838B4E7B86F229BB72CE3;
-			remoteInfo = "Pods-two-half-passwordTests-PureLayout";
+			remoteGlobalIDString = BAD8B758D8EBDB4EC0BC768B;
+			remoteInfo = "Pods-SwiftyUserDefaults";
 		};
-		A033F06CE6C23638145F1C08 /* PBXContainerItemProxy */ = {
+		C55973D2E35DC12E4890BA74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C2728902A54297DD97D61808 /* Project object */;
+			containerPortal = FDB0A30BBABC3DBFD2B5F777 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 795E81AEDE72313747AF762E;
-			remoteInfo = "Pods-two-half-password-PureLayout";
+			remoteGlobalIDString = 46F6B0D6452BC0ABC1F714B9;
+			remoteInfo = "Pods-two-half-passwordTests-SwiftyUserDefaults";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0785AE879B95116E891BB53F /* Pods-two-half-passwordTests-PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-passwordTests-PureLayout-umbrella.h"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		0994FB4831F087B6BE0588E3 /* Pods-two-half-password-PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-password-PureLayout-umbrella.h"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		09B72AEF306542A5D2A95AA5 /* Pods-two-half-password-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-password-resources.sh"; sourceTree = "<group>"; };
-		15ECA6CC61ABB249C68AC292 /* Pods-two-half-passwordTests-PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-two-half-passwordTests-PureLayout-dummy.m"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-dummy.m"; sourceTree = "<group>"; };
-		1771B293DDB7355B86B2872F /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		1B9FFAA08B60DC18063313C5 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		1FD631C692E14DFDADDBBB88 /* Pods-two-half-password-PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-password-PureLayout-prefix.pch"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		200132F06CEC1BCB044BDAE4 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		212F256422D605EDE6F331C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27D526669C4CF7B5106D32DB /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		28C4A927D22466B225D4AD41 /* Pods-two-half-password.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-two-half-password.modulemap"; sourceTree = "<group>"; };
-		292CD2A5C27D294092AD7D97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-two-half-password-PureLayout/Info.plist"; sourceTree = "<group>"; };
-		2C1844FF5EB8538F7F94D35E /* Pods-PureLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureLayout-Private.xcconfig"; sourceTree = "<group>"; };
-		354A10373D96E2490EF220FD /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		35B80586790D4A86CEC00FDE /* Pods-two-half-password-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-password-umbrella.h"; sourceTree = "<group>"; };
-		4142633118BF17873D939918 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		43AE83CFBAA2DDD810BFF112 /* Pods-two-half-passwordTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-two-half-passwordTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		440164A29ADF975FA92913C5 /* Pods-PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		468CE2EF37A39CB534F5E935 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49EDF4D314F93A3E52FB3927 /* Pods-two-half-passwordTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-passwordTests-resources.sh"; sourceTree = "<group>"; };
-		4C1BFAFE3297A4B81EB0D188 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		511184CD3D3D2C0AA148900B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		540DF2A230195D52788D5B3A /* Pods-two-half-passwordTests-PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-two-half-passwordTests-PureLayout.modulemap"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout.modulemap"; sourceTree = "<group>"; };
-		565B8CEFE2735A82AE594500 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		56B18426911D2D9D3F304591 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		5DFBD5AAFBA0A0A67C093826 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		6170166B9444656F94FD0B73 /* Pods-two-half-password-PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-password-PureLayout.xcconfig"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout.xcconfig"; sourceTree = "<group>"; };
-		67E57810CBC7AE053CE83E8F /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		694AE1D29E4815CAE647E75B /* Pods-two-half-password-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-two-half-password-dummy.m"; sourceTree = "<group>"; };
-		72FA6070EC5E9A68B5E72904 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		76C89F941EFA111BA6157141 /* Pods-two-half-password-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-password-environment.h"; sourceTree = "<group>"; };
-		78498B6CEEF56451FBDBB1B6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		79B7204CE2B3ADB615395E2B /* Pods-two-half-passwordTests-PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-passwordTests-PureLayout-prefix.pch"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		80BB4481AD4A60FCFFEE26E5 /* Pods-two-half-passwordTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-passwordTests-umbrella.h"; sourceTree = "<group>"; };
-		82825EE4EB404EBEDC3CB329 /* Pods-two-half-passwordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-passwordTests.debug.xcconfig"; sourceTree = "<group>"; };
-		83841BA779BE385BDB506222 /* Pods-PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PureLayout.xcconfig"; sourceTree = "<group>"; };
-		8AB0238ED8E2DB626BAF4044 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-two-half-passwordTests-PureLayout/Info.plist"; sourceTree = "<group>"; };
-		8B058411443BA9A85A8597FC /* Pods-two-half-password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-password.release.xcconfig"; sourceTree = "<group>"; };
-		8C7128E21869DA88FC3BA3C0 /* Pods-two-half-password-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-password-frameworks.sh"; sourceTree = "<group>"; };
-		8D2135028FB436E3618DF264 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		8F0F60BFCC7BC2F171C55E0C /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		938F981A52559E8BF0AAC127 /* Pods-two-half-passwordTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-two-half-passwordTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		942F68C7DC6729DBF9E8C8FB /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		A0CFAD0E3C9BCC88C2601D93 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		A45186622119BB230043F15B /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A976BF0CA6969A003C569BE7 /* Pods-PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PureLayout.modulemap"; sourceTree = "<group>"; };
-		AC297DD750904BB6AB60452F /* Pods-two-half-passwordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-passwordTests.release.xcconfig"; sourceTree = "<group>"; };
-		AD810B00FF37E5073148C530 /* Pods-two-half-password-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-two-half-password-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B0894A900758891836D16BA9 /* Pods-two-half-password-PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-two-half-password-PureLayout-dummy.m"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-dummy.m"; sourceTree = "<group>"; };
-		B23DE5E13FF0E9BAAE3CF764 /* Pods-two-half-password-PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-two-half-password-PureLayout.modulemap"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout.modulemap"; sourceTree = "<group>"; };
-		B3708A78C91F58780D16E29B /* Pods-two-half-passwordTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-passwordTests-frameworks.sh"; sourceTree = "<group>"; };
-		B47D8016F0AF722F4CC0F781 /* Pods-two-half-passwordTests-PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-passwordTests-PureLayout.xcconfig"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout.xcconfig"; sourceTree = "<group>"; };
-		B5E2EC969962A0CCB9A9F984 /* Pods-two-half-password-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-two-half-password-acknowledgements.plist"; sourceTree = "<group>"; };
-		B8441A603331335392F227B7 /* Pods-two-half-passwordTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-two-half-passwordTests.modulemap"; sourceTree = "<group>"; };
-		BAB462F74CE8F7C7490CCEDE /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		BC7C9EBE53FAF7E393BD83F9 /* Pods-PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		BD6E9D27A15B822A0A5DE2C1 /* Pods-two-half-passwordTests-PureLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-passwordTests-PureLayout-Private.xcconfig"; path = "../Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-Private.xcconfig"; sourceTree = "<group>"; };
-		BE23118313D2DF52F2A5184E /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0D9173C62EAE77266E32679 /* Pods-two-half-passwordTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-passwordTests-environment.h"; sourceTree = "<group>"; };
-		C608F94A9FCC82DF1202EA57 /* Pods-PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PureLayout-dummy.m"; sourceTree = "<group>"; };
-		C623C363754F4FE31C21A45A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7DFA552EA2F5B9B0777C957 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		CCD21F05DCBE8C8155EC7F95 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		CEBE68CEEA33DE442827AFCF /* Pods_two_half_passwordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_two_half_passwordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D10F1807A482FDE453F104E6 /* Pods-two-half-password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-password.debug.xcconfig"; sourceTree = "<group>"; };
-		E6F796D2993C6F328EF28556 /* Pods-two-half-password-PureLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-password-PureLayout-Private.xcconfig"; path = "../Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-Private.xcconfig"; sourceTree = "<group>"; };
-		EE0ACADF197C084CD72D069A /* Pods-two-half-passwordTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-two-half-passwordTests-dummy.m"; sourceTree = "<group>"; };
-		F3AE3E0E71238E49DD280A30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F87FDE90A9405DED745922C0 /* Pods_two_half_password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_two_half_password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB33C8E3DF97A5A73D969437 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007ACC554893DEFF24899CB4 /* Pods-two-half-password-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-password-umbrella.h"; sourceTree = "<group>"; };
+		051699CFA0838B9502EEF440 /* Pods-two-half-passwordTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-two-half-passwordTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		089B66948FE3CABCB239182B /* Pods-SwiftyUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyUserDefaults.xcconfig"; sourceTree = "<group>"; };
+		0B4ADAF2FF7F72E3D05C6E24 /* Pods-two-half-password-SwiftyUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-password-SwiftyUserDefaults.xcconfig"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults.xcconfig"; sourceTree = "<group>"; };
+		0EEE5BDF1D7F93B7D011365E /* Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
+		1B38B4D57427F51FA14D2F95 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		2DD9986CB87BCCDB04205510 /* Pods-two-half-password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-password.debug.xcconfig"; sourceTree = "<group>"; };
+		325EF9DF2AC5DE52E7112C61 /* Pods-two-half-password-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-password-frameworks.sh"; sourceTree = "<group>"; };
+		340521F0E5B557E00CBFB6B5 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		34C46DCBCB1E3DFE9F9A615A /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		3ACB5FE64B3089F6CD1237E8 /* Pods-two-half-passwordTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-two-half-passwordTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D2156F45B9313F471EA6E2A /* Pods-SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
+		3EE677C58B8D69CABC4FC7B0 /* Pods-two-half-passwordTests-SwiftyUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-passwordTests-SwiftyUserDefaults.xcconfig"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults.xcconfig"; sourceTree = "<group>"; };
+		41CC9EA452D57E0168FF2FBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Info.plist"; sourceTree = "<group>"; };
+		42C0AC4909C2CC4A3C804BFC /* Pods-two-half-password-SwiftyUserDefaults.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-two-half-password-SwiftyUserDefaults.modulemap"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults.modulemap"; sourceTree = "<group>"; };
+		441FB8FCB1BDE12A2FFFD8C3 /* Pods-two-half-passwordTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-passwordTests-environment.h"; sourceTree = "<group>"; };
+		4917B926E23DC6D2875FDC18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF27054ED06BD611B1F853F /* Pods-two-half-passwordTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-passwordTests-resources.sh"; sourceTree = "<group>"; };
+		4EDD5FF262F704D85758E51C /* Pods-SwiftyUserDefaults-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyUserDefaults-umbrella.h"; sourceTree = "<group>"; };
+		506931EA4D0801AFBA26CD43 /* Pods-two-half-password-SwiftyUserDefaults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-two-half-password-SwiftyUserDefaults-dummy.m"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-dummy.m"; sourceTree = "<group>"; };
+		508226BB47CFC0D4034C9DFE /* Pods-two-half-password-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-two-half-password-acknowledgements.plist"; sourceTree = "<group>"; };
+		547034E3925BDE627CFC1F4C /* Pods_two_half_passwordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_two_half_passwordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5FD0B2DFFF906FCBF9A0F2 /* Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap"; sourceTree = "<group>"; };
+		5D853C7DD501B97A2A1440BE /* Pods-two-half-password-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-two-half-password-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E79A2D674E6CA3EFC99C334 /* Pods-SwiftyUserDefaults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyUserDefaults-dummy.m"; sourceTree = "<group>"; };
+		60289E24CEA6B6AEE188B87E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685E76458A4206392D833BD2 /* Pods-two-half-passwordTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-two-half-passwordTests.modulemap"; sourceTree = "<group>"; };
+		692D0C4B49A1249E698309D5 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyUserDefaults.swift; path = Src/SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		69E07EAD46FAF7ADAECC4028 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		6CBE95A495BF8E83AC9E1EBC /* Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h"; sourceTree = "<group>"; };
+		84D26DD8C0C1F68E51906D56 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8547500D2DADE450A32BC7B8 /* Pods-two-half-passwordTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-passwordTests-frameworks.sh"; sourceTree = "<group>"; };
+		890D8606D5E56D25B5F95F73 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8FF85333FA7D945FEAB437C5 /* Pods-two-half-passwordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-passwordTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FFDB913F81131352A774A90 /* Pods-two-half-passwordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-passwordTests.release.xcconfig"; sourceTree = "<group>"; };
+		99C9349C236C677B5F3FC1F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD55A19D986BE5BA2FD9B70 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		9B3897038D7682F4735D97B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-two-half-password-SwiftyUserDefaults/Info.plist"; sourceTree = "<group>"; };
+		9DD4AD510E423E278D161F9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A067FBC058031D8F4A543FEA /* Pods-two-half-password.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-two-half-password.modulemap"; sourceTree = "<group>"; };
+		A36B86E58003C28979151E6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		ACE8EB90A5C9D5F2CC5AAA36 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD88E5268116098B020C16C1 /* Pods-two-half-password-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-password-environment.h"; sourceTree = "<group>"; };
+		B2BDE3F5AA61D7F747D9AEA7 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB7115448BAFA714CDA8D61 /* Pods-two-half-password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-two-half-password.release.xcconfig"; sourceTree = "<group>"; };
+		BF99955FB96265FF7B161680 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		C02E46F3956FE98D1CD43767 /* Pods-two-half-passwordTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-two-half-passwordTests-umbrella.h"; sourceTree = "<group>"; };
+		CCA8A1645F3718DEA0C028C0 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFB4A7217C54F2B37C07E0D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		CF8EC485DCD9162BD371B325 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D233150648017760FBFFEC44 /* Pods-two-half-password-SwiftyUserDefaults-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-password-SwiftyUserDefaults-umbrella.h"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-umbrella.h"; sourceTree = "<group>"; };
+		D87284E38D3B5A61A9AFFECF /* Pods_two_half_password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_two_half_password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8AE5C7E83BD8B3E05CE1412 /* Pods-SwiftyUserDefaults.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyUserDefaults.modulemap"; sourceTree = "<group>"; };
+		DB848DDC30CAF7A861060393 /* Pods-SwiftyUserDefaults-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyUserDefaults-Private.xcconfig"; sourceTree = "<group>"; };
+		DBF12E6118269F57CBA1832E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E5E31DBF41C150A7C51E8E6C /* Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig"; sourceTree = "<group>"; };
+		E9CCCD201881FE502F14EDB8 /* Pods-two-half-password-SwiftyUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-two-half-password-SwiftyUserDefaults-prefix.pch"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-prefix.pch"; sourceTree = "<group>"; };
+		EA3281361291756682B0BD4C /* Pods-two-half-password-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-two-half-password-resources.sh"; sourceTree = "<group>"; };
+		EB9603E70797275223F25F66 /* Pods-two-half-password-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-two-half-password-dummy.m"; sourceTree = "<group>"; };
+		EE8FC137D28699350E528CBB /* Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m"; path = "../Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m"; sourceTree = "<group>"; };
+		FA95183FB986B4E725E03581 /* Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig"; path = "../Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig"; sourceTree = "<group>"; };
+		FE3F20DC12B65FC88046C1BA /* Pods-two-half-passwordTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-two-half-passwordTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CEF6CD3B8B89A19FD0CE089 /* Frameworks */ = {
+		0418A8B5F8BE7E33DA5641A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BA984EF7A272705816695C /* Cocoa.framework in Frameworks */,
+				E0A2F06058C6BD427C715F82 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D293379B03A72B7406F9F84 /* Frameworks */ = {
+		299D7FA9BC8406261542F19E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7106D3010417BE46C494574 /* Cocoa.framework in Frameworks */,
+				D742E2C9F72CDF25E84276E2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DECD2B4022CE82E680C2BAC /* Frameworks */ = {
+		53FF990DA6DB509C2C8A7A9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA9713F66B7A7EC74791F48 /* Cocoa.framework in Frameworks */,
+				762408308DF01CCD977E490C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4A68A74302AF77802F6EB95 /* Frameworks */ = {
+		6311F35B1D6676DD80CB416D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F41779253CC3390C70A435 /* Cocoa.framework in Frameworks */,
+				5BE0A955AE3E1735D57B44AC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA682A7E7A2BD19D576ABEF4 /* Frameworks */ = {
+		F88ADABAA2B513411E202924 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B0AF94E2D887209A7550DA /* Cocoa.framework in Frameworks */,
+				0CD35E877D54040534734283 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB0D8E1F4EF92C7234D4D680 /* Frameworks */ = {
+		FCB4D5E5E6FF39E8A4DCC6CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CDB5988A26003D30E919EA4 /* Cocoa.framework in Frameworks */,
+				FA48E644C67152B9867D7DFF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DBF02650DF0D0691E1E6720 /* Support Files */ = {
+		066737B960D280641F9B29AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				292CD2A5C27D294092AD7D97 /* Info.plist */,
-				8AB0238ED8E2DB626BAF4044 /* Info.plist */,
-				FB33C8E3DF97A5A73D969437 /* Info.plist */,
-				A976BF0CA6969A003C569BE7 /* Pods-PureLayout.modulemap */,
-				83841BA779BE385BDB506222 /* Pods-PureLayout.xcconfig */,
-				2C1844FF5EB8538F7F94D35E /* Pods-PureLayout-Private.xcconfig */,
-				C608F94A9FCC82DF1202EA57 /* Pods-PureLayout-dummy.m */,
-				BC7C9EBE53FAF7E393BD83F9 /* Pods-PureLayout-prefix.pch */,
-				440164A29ADF975FA92913C5 /* Pods-PureLayout-umbrella.h */,
-				B23DE5E13FF0E9BAAE3CF764 /* Pods-two-half-password-PureLayout.modulemap */,
-				6170166B9444656F94FD0B73 /* Pods-two-half-password-PureLayout.xcconfig */,
-				E6F796D2993C6F328EF28556 /* Pods-two-half-password-PureLayout-Private.xcconfig */,
-				B0894A900758891836D16BA9 /* Pods-two-half-password-PureLayout-dummy.m */,
-				1FD631C692E14DFDADDBBB88 /* Pods-two-half-password-PureLayout-prefix.pch */,
-				0994FB4831F087B6BE0588E3 /* Pods-two-half-password-PureLayout-umbrella.h */,
-				540DF2A230195D52788D5B3A /* Pods-two-half-passwordTests-PureLayout.modulemap */,
-				B47D8016F0AF722F4CC0F781 /* Pods-two-half-passwordTests-PureLayout.xcconfig */,
-				BD6E9D27A15B822A0A5DE2C1 /* Pods-two-half-passwordTests-PureLayout-Private.xcconfig */,
-				15ECA6CC61ABB249C68AC292 /* Pods-two-half-passwordTests-PureLayout-dummy.m */,
-				79B7204CE2B3ADB615395E2B /* Pods-two-half-passwordTests-PureLayout-prefix.pch */,
-				0785AE879B95116E891BB53F /* Pods-two-half-passwordTests-PureLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PureLayout";
-			sourceTree = "<group>";
-		};
-		30204A6CC4E13BA29A3B0CD9 /* PureLayout */ = {
-			isa = PBXGroup;
-			children = (
-				1B9FFAA08B60DC18063313C5 /* ALView+PureLayout.h */,
-				942F68C7DC6729DBF9E8C8FB /* ALView+PureLayout.m */,
-				8D2135028FB436E3618DF264 /* NSArray+PureLayout.h */,
-				1771B293DDB7355B86B2872F /* NSArray+PureLayout.m */,
-				67E57810CBC7AE053CE83E8F /* NSLayoutConstraint+PureLayout.h */,
-				565B8CEFE2735A82AE594500 /* NSLayoutConstraint+PureLayout.m */,
-				27D526669C4CF7B5106D32DB /* PureLayout.h */,
-				72FA6070EC5E9A68B5E72904 /* PureLayout+Internal.h */,
-				CCD21F05DCBE8C8155EC7F95 /* PureLayoutDefines.h */,
-				0DBF02650DF0D0691E1E6720 /* Support Files */,
-			);
-			path = PureLayout;
-			sourceTree = "<group>";
-		};
-		699FB70A8339ECA6855498FD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F3AE3E0E71238E49DD280A30 /* Info.plist */,
-				4C1BFAFE3297A4B81EB0D188 /* Pods.modulemap */,
-				4142633118BF17873D939918 /* Pods-acknowledgements.markdown */,
-				200132F06CEC1BCB044BDAE4 /* Pods-acknowledgements.plist */,
-				78498B6CEEF56451FBDBB1B6 /* Pods-dummy.m */,
-				BAB462F74CE8F7C7490CCEDE /* Pods-environment.h */,
-				A0CFAD0E3C9BCC88C2601D93 /* Pods-frameworks.sh */,
-				5DFBD5AAFBA0A0A67C093826 /* Pods-resources.sh */,
-				8F0F60BFCC7BC2F171C55E0C /* Pods-umbrella.h */,
-				C7DFA552EA2F5B9B0777C957 /* Pods.debug.xcconfig */,
-				511184CD3D3D2C0AA148900B /* Pods.release.xcconfig */,
+				DBA04BF17F6FF60B3DC0DCAD /* SwiftyUserDefaults */,
 			);
 			name = Pods;
-			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		6F209C5C7A2D5661509C702E /* Frameworks */ = {
+		2659D06914BB678E4DB17578 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0000C18ECFF9619E0F119AF /* OS X */,
+				60289E24CEA6B6AEE188B87E /* Pods.framework */,
+				D87284E38D3B5A61A9AFFECF /* Pods_two_half_password.framework */,
+				547034E3925BDE627CFC1F4C /* Pods_two_half_passwordTests.framework */,
+				B2BDE3F5AA61D7F747D9AEA7 /* SwiftyUserDefaults.framework */,
+				CCA8A1645F3718DEA0C028C0 /* SwiftyUserDefaults.framework */,
+				CF8EC485DCD9162BD371B325 /* SwiftyUserDefaults.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		6F46510CFE287492AA047F9F /* Pods-two-half-password */ = {
+		84A32C34B4BAA9BE60B1CE63 /* Pods-two-half-passwordTests */ = {
 			isa = PBXGroup;
 			children = (
-				C623C363754F4FE31C21A45A /* Info.plist */,
-				28C4A927D22466B225D4AD41 /* Pods-two-half-password.modulemap */,
-				AD810B00FF37E5073148C530 /* Pods-two-half-password-acknowledgements.markdown */,
-				B5E2EC969962A0CCB9A9F984 /* Pods-two-half-password-acknowledgements.plist */,
-				694AE1D29E4815CAE647E75B /* Pods-two-half-password-dummy.m */,
-				76C89F941EFA111BA6157141 /* Pods-two-half-password-environment.h */,
-				8C7128E21869DA88FC3BA3C0 /* Pods-two-half-password-frameworks.sh */,
-				09B72AEF306542A5D2A95AA5 /* Pods-two-half-password-resources.sh */,
-				35B80586790D4A86CEC00FDE /* Pods-two-half-password-umbrella.h */,
-				D10F1807A482FDE453F104E6 /* Pods-two-half-password.debug.xcconfig */,
-				8B058411443BA9A85A8597FC /* Pods-two-half-password.release.xcconfig */,
-			);
-			name = "Pods-two-half-password";
-			path = "Target Support Files/Pods-two-half-password";
-			sourceTree = "<group>";
-		};
-		9FA6E17167A315AC45952C6E /* Pods-two-half-passwordTests */ = {
-			isa = PBXGroup;
-			children = (
-				212F256422D605EDE6F331C8 /* Info.plist */,
-				B8441A603331335392F227B7 /* Pods-two-half-passwordTests.modulemap */,
-				938F981A52559E8BF0AAC127 /* Pods-two-half-passwordTests-acknowledgements.markdown */,
-				43AE83CFBAA2DDD810BFF112 /* Pods-two-half-passwordTests-acknowledgements.plist */,
-				EE0ACADF197C084CD72D069A /* Pods-two-half-passwordTests-dummy.m */,
-				C0D9173C62EAE77266E32679 /* Pods-two-half-passwordTests-environment.h */,
-				B3708A78C91F58780D16E29B /* Pods-two-half-passwordTests-frameworks.sh */,
-				49EDF4D314F93A3E52FB3927 /* Pods-two-half-passwordTests-resources.sh */,
-				80BB4481AD4A60FCFFEE26E5 /* Pods-two-half-passwordTests-umbrella.h */,
-				82825EE4EB404EBEDC3CB329 /* Pods-two-half-passwordTests.debug.xcconfig */,
-				AC297DD750904BB6AB60452F /* Pods-two-half-passwordTests.release.xcconfig */,
+				A36B86E58003C28979151E6C /* Info.plist */,
+				685E76458A4206392D833BD2 /* Pods-two-half-passwordTests.modulemap */,
+				3ACB5FE64B3089F6CD1237E8 /* Pods-two-half-passwordTests-acknowledgements.markdown */,
+				051699CFA0838B9502EEF440 /* Pods-two-half-passwordTests-acknowledgements.plist */,
+				FE3F20DC12B65FC88046C1BA /* Pods-two-half-passwordTests-dummy.m */,
+				441FB8FCB1BDE12A2FFFD8C3 /* Pods-two-half-passwordTests-environment.h */,
+				8547500D2DADE450A32BC7B8 /* Pods-two-half-passwordTests-frameworks.sh */,
+				4BF27054ED06BD611B1F853F /* Pods-two-half-passwordTests-resources.sh */,
+				C02E46F3956FE98D1CD43767 /* Pods-two-half-passwordTests-umbrella.h */,
+				8FF85333FA7D945FEAB437C5 /* Pods-two-half-passwordTests.debug.xcconfig */,
+				8FFDB913F81131352A774A90 /* Pods-two-half-passwordTests.release.xcconfig */,
 			);
 			name = "Pods-two-half-passwordTests";
 			path = "Target Support Files/Pods-two-half-passwordTests";
 			sourceTree = "<group>";
 		};
-		A1ACC808545721D549D2341F /* Products */ = {
+		AF9124A9F8B3B22A4DB12BF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56B18426911D2D9D3F304591 /* Pods.framework */,
-				F87FDE90A9405DED745922C0 /* Pods_two_half_password.framework */,
-				CEBE68CEEA33DE442827AFCF /* Pods_two_half_passwordTests.framework */,
-				468CE2EF37A39CB534F5E935 /* PureLayout.framework */,
-				BE23118313D2DF52F2A5184E /* PureLayout.framework */,
-				A45186622119BB230043F15B /* PureLayout.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D7E44B3638D47A102618ECFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				30204A6CC4E13BA29A3B0CD9 /* PureLayout */,
+				99C9349C236C677B5F3FC1F1 /* Info.plist */,
+				340521F0E5B557E00CBFB6B5 /* Pods.modulemap */,
+				ACE8EB90A5C9D5F2CC5AAA36 /* Pods-acknowledgements.markdown */,
+				69E07EAD46FAF7ADAECC4028 /* Pods-acknowledgements.plist */,
+				CCFB4A7217C54F2B37C07E0D /* Pods-dummy.m */,
+				9AD55A19D986BE5BA2FD9B70 /* Pods-environment.h */,
+				BF99955FB96265FF7B161680 /* Pods-frameworks.sh */,
+				84D26DD8C0C1F68E51906D56 /* Pods-resources.sh */,
+				34C46DCBCB1E3DFE9F9A615A /* Pods-umbrella.h */,
+				DBF12E6118269F57CBA1832E /* Pods.debug.xcconfig */,
+				1B38B4D57427F51FA14D2F95 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		E0000C18ECFF9619E0F119AF /* OS X */ = {
+		B0EE66E58554CF6680FA4462 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C2FAF6CF02EBCBAD5EDA84C /* Cocoa.framework */,
+				9B3897038D7682F4735D97B2 /* Info.plist */,
+				41CC9EA452D57E0168FF2FBD /* Info.plist */,
+				9DD4AD510E423E278D161F9A /* Info.plist */,
+				D8AE5C7E83BD8B3E05CE1412 /* Pods-SwiftyUserDefaults.modulemap */,
+				089B66948FE3CABCB239182B /* Pods-SwiftyUserDefaults.xcconfig */,
+				DB848DDC30CAF7A861060393 /* Pods-SwiftyUserDefaults-Private.xcconfig */,
+				5E79A2D674E6CA3EFC99C334 /* Pods-SwiftyUserDefaults-dummy.m */,
+				3D2156F45B9313F471EA6E2A /* Pods-SwiftyUserDefaults-prefix.pch */,
+				4EDD5FF262F704D85758E51C /* Pods-SwiftyUserDefaults-umbrella.h */,
+				42C0AC4909C2CC4A3C804BFC /* Pods-two-half-password-SwiftyUserDefaults.modulemap */,
+				0B4ADAF2FF7F72E3D05C6E24 /* Pods-two-half-password-SwiftyUserDefaults.xcconfig */,
+				FA95183FB986B4E725E03581 /* Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig */,
+				506931EA4D0801AFBA26CD43 /* Pods-two-half-password-SwiftyUserDefaults-dummy.m */,
+				E9CCCD201881FE502F14EDB8 /* Pods-two-half-password-SwiftyUserDefaults-prefix.pch */,
+				D233150648017760FBFFEC44 /* Pods-two-half-password-SwiftyUserDefaults-umbrella.h */,
+				5D5FD0B2DFFF906FCBF9A0F2 /* Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap */,
+				3EE677C58B8D69CABC4FC7B0 /* Pods-two-half-passwordTests-SwiftyUserDefaults.xcconfig */,
+				E5E31DBF41C150A7C51E8E6C /* Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig */,
+				EE8FC137D28699350E528CBB /* Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m */,
+				0EEE5BDF1D7F93B7D011365E /* Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch */,
+				6CBE95A495BF8E83AC9E1EBC /* Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SwiftyUserDefaults";
+			sourceTree = "<group>";
+		};
+		DBA04BF17F6FF60B3DC0DCAD /* SwiftyUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				692D0C4B49A1249E698309D5 /* SwiftyUserDefaults.swift */,
+				B0EE66E58554CF6680FA4462 /* Support Files */,
+			);
+			path = SwiftyUserDefaults;
+			sourceTree = "<group>";
+		};
+		DE1AEB23FC31443EA8F049C4 /* Pods-two-half-password */ = {
+			isa = PBXGroup;
+			children = (
+				4917B926E23DC6D2875FDC18 /* Info.plist */,
+				A067FBC058031D8F4A543FEA /* Pods-two-half-password.modulemap */,
+				5D853C7DD501B97A2A1440BE /* Pods-two-half-password-acknowledgements.markdown */,
+				508226BB47CFC0D4034C9DFE /* Pods-two-half-password-acknowledgements.plist */,
+				EB9603E70797275223F25F66 /* Pods-two-half-password-dummy.m */,
+				AD88E5268116098B020C16C1 /* Pods-two-half-password-environment.h */,
+				325EF9DF2AC5DE52E7112C61 /* Pods-two-half-password-frameworks.sh */,
+				EA3281361291756682B0BD4C /* Pods-two-half-password-resources.sh */,
+				007ACC554893DEFF24899CB4 /* Pods-two-half-password-umbrella.h */,
+				2DD9986CB87BCCDB04205510 /* Pods-two-half-password.debug.xcconfig */,
+				BBB7115448BAFA714CDA8D61 /* Pods-two-half-password.release.xcconfig */,
+			);
+			name = "Pods-two-half-password";
+			path = "Target Support Files/Pods-two-half-password";
+			sourceTree = "<group>";
+		};
+		E26C071C7000634231128463 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F039456BA3FE1B6C811AC06C /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED45D46654D6A7AFD0F041FA = {
+			isa = PBXGroup;
+			children = (
+				890D8606D5E56D25B5F95F73 /* Podfile */,
+				E26C071C7000634231128463 /* Frameworks */,
+				066737B960D280641F9B29AD /* Pods */,
+				2659D06914BB678E4DB17578 /* Products */,
+				F82C48F69953939DF58E04E9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F039456BA3FE1B6C811AC06C /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				ABD315B99FCA2217D6CD9E6D /* Cocoa.framework */,
 			);
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		F3441958F454D14CE4E96ED9 /* Targets Support Files */ = {
+		F82C48F69953939DF58E04E9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				699FB70A8339ECA6855498FD /* Pods */,
-				6F46510CFE287492AA047F9F /* Pods-two-half-password */,
-				9FA6E17167A315AC45952C6E /* Pods-two-half-passwordTests */,
+				AF9124A9F8B3B22A4DB12BF3 /* Pods */,
+				DE1AEB23FC31443EA8F049C4 /* Pods-two-half-password */,
+				84A32C34B4BAA9BE60B1CE63 /* Pods-two-half-passwordTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FC6735922F1424202FDF5A5F = {
-			isa = PBXGroup;
-			children = (
-				354A10373D96E2490EF220FD /* Podfile */,
-				6F209C5C7A2D5661509C702E /* Frameworks */,
-				D7E44B3638D47A102618ECFB /* Pods */,
-				A1ACC808545721D549D2341F /* Products */,
-				F3441958F454D14CE4E96ED9 /* Targets Support Files */,
-			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1EB8E85D6EADA780A32FA84B /* Headers */ = {
+		00178FD222D4D2CE8ECAE1C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC14C0A88396A47C66FB590 /* Pods-two-half-passwordTests-umbrella.h in Headers */,
+				11ADB1292903891517AB3939 /* Pods-two-half-passwordTests-SwiftyUserDefaults-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ADD5861FDE621A9E9EAF098 /* Headers */ = {
+		18C1CAED968CDB14F422D721 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5A79D07E7C38FB8EA3B79AF /* Pods-two-half-password-umbrella.h in Headers */,
+				B8D721BEE07B13AC3B6A29E7 /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ADF9CF304DD4BDBBA629868 /* Headers */ = {
+		78DBF117615A3598FCFD8882 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A373FC1E92D51892D73D2C48 /* ALView+PureLayout.h in Headers */,
-				14996B298C6F6065FD5E3FCD /* NSArray+PureLayout.h in Headers */,
-				C9F3DA5703E5C0E8E5287AEB /* NSLayoutConstraint+PureLayout.h in Headers */,
-				4FC7062F19D0F2D462767A6F /* Pods-PureLayout-umbrella.h in Headers */,
-				C9497B2451693CDF8B87FA7C /* PureLayout+Internal.h in Headers */,
-				DC5E74D9C1AC8E9582DD444E /* PureLayout.h in Headers */,
-				8A33F8D7D6D8D9695D960220 /* PureLayoutDefines.h in Headers */,
+				DDD11924C746AB7DD6B92F80 /* Pods-two-half-password-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EA8AFA0D35018F35F1AE305 /* Headers */ = {
+		BA9537C2299E828A6769ED85 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF8F67B228A15908568A5424 /* ALView+PureLayout.h in Headers */,
-				73039C0A3E3CE9922B99332C /* NSArray+PureLayout.h in Headers */,
-				D6492FD6343D6E309C729268 /* NSLayoutConstraint+PureLayout.h in Headers */,
-				9686AA320172C851FFD6584C /* Pods-two-half-password-PureLayout-umbrella.h in Headers */,
-				FFEE092E5002E89D3C58A3A0 /* PureLayout+Internal.h in Headers */,
-				E6B30F0901865FC6B304E3BA /* PureLayout.h in Headers */,
-				87559749772C1C3D6E9EC030 /* PureLayoutDefines.h in Headers */,
+				B0CE870C3B8EEBD76CB91A4F /* Pods-two-half-passwordTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C710F87997844F42D4ABF864 /* Headers */ = {
+		D222754155E307C81896CA66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BAC4FA749C3E24E2798A983 /* ALView+PureLayout.h in Headers */,
-				93D84B41A02694A7CE513338 /* NSArray+PureLayout.h in Headers */,
-				38AF765679DC902146D48836 /* NSLayoutConstraint+PureLayout.h in Headers */,
-				9C94CE13489996F5A4D0AE32 /* Pods-two-half-passwordTests-PureLayout-umbrella.h in Headers */,
-				89AC415A87D99F7E2DC45D45 /* PureLayout+Internal.h in Headers */,
-				F3A313E53455E488AB941E33 /* PureLayout.h in Headers */,
-				A0F68C6B1684C0F533F218AA /* PureLayoutDefines.h in Headers */,
+				D2F9D653D764AE5F3869C598 /* Pods-two-half-password-SwiftyUserDefaults-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E840DB90DC7ED007399EF085 /* Headers */ = {
+		EBB682FF4B84CE8B97BD9E04 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59366306B265061DBF04922 /* Pods-umbrella.h in Headers */,
+				B74807F754163AF4C658F2A1 /* Pods-SwiftyUserDefaults-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0F1AA3817CEE2F6A97498753 /* Pods */ = {
+		464EF498EA1AA86277371783 /* Pods-two-half-password-SwiftyUserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1356808CD55654E4591E83A5 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = A07F4ECB230A16132DE7BB78 /* Build configuration list for PBXNativeTarget "Pods-two-half-password-SwiftyUserDefaults" */;
 			buildPhases = (
-				BADFC23AA598E77B292739C4 /* Sources */,
-				5DECD2B4022CE82E680C2BAC /* Frameworks */,
-				E840DB90DC7ED007399EF085 /* Headers */,
+				E68D125CFF927B4CB63C619C /* Sources */,
+				6311F35B1D6676DD80CB416D /* Frameworks */,
+				D222754155E307C81896CA66 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A5EAE53DC56BEBF3A63A9EB /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 56B18426911D2D9D3F304591 /* Pods.framework */;
+			name = "Pods-two-half-password-SwiftyUserDefaults";
+			productName = "Pods-two-half-password-SwiftyUserDefaults";
+			productReference = CCA8A1645F3718DEA0C028C0 /* SwiftyUserDefaults.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		29B399AA37EDA1D5B3889FD2 /* Pods-two-half-password */ = {
+		46F6B0D6452BC0ABC1F714B9 /* Pods-two-half-passwordTests-SwiftyUserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B6A9B9BE5ECB04D940BC628 /* Build configuration list for PBXNativeTarget "Pods-two-half-password" */;
+			buildConfigurationList = 777DDC59E4440A19979856C7 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests-SwiftyUserDefaults" */;
 			buildPhases = (
-				00ED2A168FE891E16B5BBE73 /* Sources */,
-				0CEF6CD3B8B89A19FD0CE089 /* Frameworks */,
-				3ADD5861FDE621A9E9EAF098 /* Headers */,
+				EBB40E1AFB5C9E56DF6D085D /* Sources */,
+				F88ADABAA2B513411E202924 /* Frameworks */,
+				00178FD222D4D2CE8ECAE1C6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CF8F74FD11821088D10378DA /* PBXTargetDependency */,
+			);
+			name = "Pods-two-half-passwordTests-SwiftyUserDefaults";
+			productName = "Pods-two-half-passwordTests-SwiftyUserDefaults";
+			productReference = B2BDE3F5AA61D7F747D9AEA7 /* SwiftyUserDefaults.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6954C04B66C442EDF3E0F18A /* Pods-two-half-password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4723A8E24BB94D9003036C20 /* Build configuration list for PBXNativeTarget "Pods-two-half-password" */;
+			buildPhases = (
+				03F394B608E2714B55B778F1 /* Sources */,
+				299D7FA9BC8406261542F19E /* Frameworks */,
+				78DBF117615A3598FCFD8882 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6F6884C8F0EC5D8118999C /* PBXTargetDependency */,
 			);
 			name = "Pods-two-half-password";
 			productName = "Pods-two-half-password";
-			productReference = F87FDE90A9405DED745922C0 /* Pods_two_half_password.framework */;
+			productReference = D87284E38D3B5A61A9AFFECF /* Pods_two_half_password.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		34B45194323FD8D1CFFEB980 /* Pods-two-half-passwordTests */ = {
+		BAD8B758D8EBDB4EC0BC768B /* Pods-SwiftyUserDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3798EFEC49C1E0CC5873763F /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests" */;
+			buildConfigurationList = 690F05D54A479B42ADC5159C /* Build configuration list for PBXNativeTarget "Pods-SwiftyUserDefaults" */;
 			buildPhases = (
-				79CFD9A4988C9C71EDFA6F6E /* Sources */,
-				5D293379B03A72B7406F9F84 /* Frameworks */,
-				1EB8E85D6EADA780A32FA84B /* Headers */,
+				DD86C8F2EEF5052DCF0AFC82 /* Sources */,
+				FCB4D5E5E6FF39E8A4DCC6CE /* Frameworks */,
+				EBB682FF4B84CE8B97BD9E04 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				59DD954F2EF8571225E8B1AE /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftyUserDefaults";
+			productName = "Pods-SwiftyUserDefaults";
+			productReference = CF8EC485DCD9162BD371B325 /* SwiftyUserDefaults.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6EE535BB8735928E0CAC6E1 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA4A382A94047BD6B9186F3 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				C694680FAA1BCF394CFB89D6 /* Sources */,
+				0418A8B5F8BE7E33DA5641A3 /* Frameworks */,
+				18C1CAED968CDB14F422D721 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3F859F49C90078CF150AED /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 60289E24CEA6B6AEE188B87E /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E79A3ECEC4E9E260F6F04E5C /* Pods-two-half-passwordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BA82975A57966978708B12 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests" */;
+			buildPhases = (
+				F91B1A20D74371D680AB0125 /* Sources */,
+				53FF990DA6DB509C2C8A7A9F /* Frameworks */,
+				BA9537C2299E828A6769ED85 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5017B8CE9F2EE002E8D81A06 /* PBXTargetDependency */,
 			);
 			name = "Pods-two-half-passwordTests";
 			productName = "Pods-two-half-passwordTests";
-			productReference = CEBE68CEEA33DE442827AFCF /* Pods_two_half_passwordTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		795E81AEDE72313747AF762E /* Pods-two-half-password-PureLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B9287771A387AFD4A83286A /* Build configuration list for PBXNativeTarget "Pods-two-half-password-PureLayout" */;
-			buildPhases = (
-				143F9B2682A343B3C51625AF /* Sources */,
-				D4A68A74302AF77802F6EB95 /* Frameworks */,
-				5EA8AFA0D35018F35F1AE305 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-two-half-password-PureLayout";
-			productName = "Pods-two-half-password-PureLayout";
-			productReference = BE23118313D2DF52F2A5184E /* PureLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AF8838B4E7B86F229BB72CE3 /* Pods-two-half-passwordTests-PureLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B28CAFAA861D38B85F33770 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests-PureLayout" */;
-			buildPhases = (
-				CCB5DFB225CF5C83FA7E9EA0 /* Sources */,
-				DA682A7E7A2BD19D576ABEF4 /* Frameworks */,
-				C710F87997844F42D4ABF864 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-two-half-passwordTests-PureLayout";
-			productName = "Pods-two-half-passwordTests-PureLayout";
-			productReference = 468CE2EF37A39CB534F5E935 /* PureLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C88A8200875E02A32C16ECEE /* Pods-PureLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 327F2D3A2D62A8488C69D00B /* Build configuration list for PBXNativeTarget "Pods-PureLayout" */;
-			buildPhases = (
-				7044F2C5E1305569168E52CC /* Sources */,
-				DB0D8E1F4EF92C7234D4D680 /* Frameworks */,
-				3ADF9CF304DD4BDBBA629868 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PureLayout";
-			productName = "Pods-PureLayout";
-			productReference = A45186622119BB230043F15B /* PureLayout.framework */;
+			productReference = 547034E3925BDE627CFC1F4C /* Pods_two_half_passwordTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C2728902A54297DD97D61808 /* Project object */ = {
+		FDB0A30BBABC3DBFD2B5F777 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 0F26BC0D1CBEA387E1DE1EE1 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 31711B0708F9D8C55FA51946 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FC6735922F1424202FDF5A5F;
-			productRefGroup = A1ACC808545721D549D2341F /* Products */;
+			mainGroup = ED45D46654D6A7AFD0F041FA;
+			productRefGroup = 2659D06914BB678E4DB17578 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F1AA3817CEE2F6A97498753 /* Pods */,
-				C88A8200875E02A32C16ECEE /* Pods-PureLayout */,
-				29B399AA37EDA1D5B3889FD2 /* Pods-two-half-password */,
-				795E81AEDE72313747AF762E /* Pods-two-half-password-PureLayout */,
-				34B45194323FD8D1CFFEB980 /* Pods-two-half-passwordTests */,
-				AF8838B4E7B86F229BB72CE3 /* Pods-two-half-passwordTests-PureLayout */,
+				E6EE535BB8735928E0CAC6E1 /* Pods */,
+				BAD8B758D8EBDB4EC0BC768B /* Pods-SwiftyUserDefaults */,
+				6954C04B66C442EDF3E0F18A /* Pods-two-half-password */,
+				464EF498EA1AA86277371783 /* Pods-two-half-password-SwiftyUserDefaults */,
+				E79A3ECEC4E9E260F6F04E5C /* Pods-two-half-passwordTests */,
+				46F6B0D6452BC0ABC1F714B9 /* Pods-two-half-passwordTests-SwiftyUserDefaults */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00ED2A168FE891E16B5BBE73 /* Sources */ = {
+		03F394B608E2714B55B778F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D937830B523182A4D7FF02A4 /* Pods-two-half-password-dummy.m in Sources */,
+				1AB0170A7F82B721BA3E25D7 /* Pods-two-half-password-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		143F9B2682A343B3C51625AF /* Sources */ = {
+		C694680FAA1BCF394CFB89D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3C429C89EC334CEDD34747 /* ALView+PureLayout.m in Sources */,
-				2BB5A1E7879E535F6636CBB6 /* NSArray+PureLayout.m in Sources */,
-				BBAE0F8F066260D2C1A9EAF3 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				B38D60346619766134D73DE7 /* Pods-two-half-password-PureLayout-dummy.m in Sources */,
+				D34559DC596386F99FC61475 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7044F2C5E1305569168E52CC /* Sources */ = {
+		DD86C8F2EEF5052DCF0AFC82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B155E85FCA3061D3E3EC4394 /* ALView+PureLayout.m in Sources */,
-				61B6CFAE4324ED4B21026236 /* NSArray+PureLayout.m in Sources */,
-				CDD5DFC1C1539C5BF94E96BB /* NSLayoutConstraint+PureLayout.m in Sources */,
-				58B5AF161C1A6D2B6054201A /* Pods-PureLayout-dummy.m in Sources */,
+				0EDE4FAB33F71CF8DDE193D6 /* Pods-SwiftyUserDefaults-dummy.m in Sources */,
+				D16EFE1383D297ED09CAD566 /* SwiftyUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79CFD9A4988C9C71EDFA6F6E /* Sources */ = {
+		E68D125CFF927B4CB63C619C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44283EAC8151382D906545D1 /* Pods-two-half-passwordTests-dummy.m in Sources */,
+				5D9795ED842DA0DB135D01A7 /* Pods-two-half-password-SwiftyUserDefaults-dummy.m in Sources */,
+				BAAAC795A85309803AFA6E76 /* SwiftyUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BADFC23AA598E77B292739C4 /* Sources */ = {
+		EBB40E1AFB5C9E56DF6D085D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E848AF404699AF1C4CA9CC /* Pods-dummy.m in Sources */,
+				4E9A441B545693EF44B149BA /* Pods-two-half-passwordTests-SwiftyUserDefaults-dummy.m in Sources */,
+				F71E6D9B5A0DEFF7DBA708AF /* SwiftyUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCB5DFB225CF5C83FA7E9EA0 /* Sources */ = {
+		F91B1A20D74371D680AB0125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78981A87D71BA9A2E4EF364A /* ALView+PureLayout.m in Sources */,
-				1413C12B60C58CB9E6C6C327 /* NSArray+PureLayout.m in Sources */,
-				59AA6AC27686C024A34C78C4 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				05F8CCA570C876693219BD41 /* Pods-two-half-passwordTests-PureLayout-dummy.m in Sources */,
+				C5520FCD35BC19EB47B4D345 /* Pods-two-half-passwordTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A5EAE53DC56BEBF3A63A9EB /* PBXTargetDependency */ = {
+		1D6F6884C8F0EC5D8118999C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PureLayout";
-			target = C88A8200875E02A32C16ECEE /* Pods-PureLayout */;
-			targetProxy = 4EE30E97704E75B56AECD19F /* PBXContainerItemProxy */;
+			name = "Pods-two-half-password-SwiftyUserDefaults";
+			target = 464EF498EA1AA86277371783 /* Pods-two-half-password-SwiftyUserDefaults */;
+			targetProxy = 43390B082A06D76DA0077C99 /* PBXContainerItemProxy */;
 		};
-		59DD954F2EF8571225E8B1AE /* PBXTargetDependency */ = {
+		5017B8CE9F2EE002E8D81A06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-two-half-passwordTests-PureLayout";
-			target = AF8838B4E7B86F229BB72CE3 /* Pods-two-half-passwordTests-PureLayout */;
-			targetProxy = 91C24BF7EF9F8BE1264BD5E2 /* PBXContainerItemProxy */;
+			name = "Pods-two-half-passwordTests-SwiftyUserDefaults";
+			target = 46F6B0D6452BC0ABC1F714B9 /* Pods-two-half-passwordTests-SwiftyUserDefaults */;
+			targetProxy = C55973D2E35DC12E4890BA74 /* PBXContainerItemProxy */;
 		};
-		CF8F74FD11821088D10378DA /* PBXTargetDependency */ = {
+		DB3F859F49C90078CF150AED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-two-half-password-PureLayout";
-			target = 795E81AEDE72313747AF762E /* Pods-two-half-password-PureLayout */;
-			targetProxy = A033F06CE6C23638145F1C08 /* PBXContainerItemProxy */;
+			name = "Pods-SwiftyUserDefaults";
+			target = BAD8B758D8EBDB4EC0BC768B /* Pods-SwiftyUserDefaults */;
+			targetProxy = 6AD43E987861373CB3666B4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06BC92776AF57CCD13F1935B /* Release */ = {
+		0987CE3289A86C8BEB0084E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB7115448BAFA714CDA8D61 /* Pods-two-half-password.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password/Pods-two-half-password.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_two_half_password;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EA3DB8285E95AD62F15910D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA95183FB986B4E725E03581 /* Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11CF7ACAC984DD71F85CF90C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B38B4D57427F51FA14D2F95 /* Pods.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CB4B006CB6D21A75448D071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF85333FA7D945FEAB437C5 /* Pods-two-half-passwordTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests/Pods-two-half-passwordTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_two_half_passwordTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		384DC0955A8C5F2356133C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB848DDC30CAF7A861060393 /* Pods-SwiftyUserDefaults-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftyUserDefaults/Pods-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyUserDefaults/Pods-SwiftyUserDefaults.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5255710D80E7B0C2FAA89837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E31DBF41C150A7C51E8E6C /* Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97765EF0D3A44AE52AF7FECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD9986CB87BCCDB04205510 /* Pods-two-half-password.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password/Pods-two-half-password.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_two_half_password;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A538E35EF05111805D645AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E31DBF41C150A7C51E8E6C /* Pods-two-half-passwordTests-SwiftyUserDefaults-Private.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests-SwiftyUserDefaults/Pods-two-half-passwordTests-SwiftyUserDefaults.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyUserDefaults;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CF49D6762811479F431DA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF12E6118269F57CBA1832E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A822EF5393FC403EE0E82E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FFDB913F81131352A774A90 /* Pods-two-half-passwordTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests/Pods-two-half-passwordTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_two_half_passwordTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9D01F2275481F8E40A48560 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -688,37 +917,7 @@
 			};
 			name = Release;
 		};
-		0C23B27EEC109BF69AAD18DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC297DD750904BB6AB60452F /* Pods-two-half-passwordTests.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests/Pods-two-half-passwordTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_two_half_passwordTests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0DCE105804BDD56BB572F3AC /* Debug */ = {
+		B2590620455D451341F9A23B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -757,9 +956,9 @@
 			};
 			name = Debug;
 		};
-		3BF15E816D4B199EAA05550B /* Release */ = {
+		D2EBAE98A9497DEB39FE5D07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 511184CD3D3D2C0AA148900B /* Pods.release.xcconfig */;
+			baseConfigurationReference = DB848DDC30CAF7A861060393 /* Pods-SwiftyUserDefaults-Private.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -770,16 +969,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftyUserDefaults/Pods-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyUserDefaults/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyUserDefaults/Pods-SwiftyUserDefaults.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = SwiftyUserDefaults;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -787,65 +984,9 @@
 			};
 			name = Release;
 		};
-		529AC96224F548A94BE415EE /* Debug */ = {
+		EEE798B5A151EB6C0F8A65E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6E9D27A15B822A0A5DE2C1 /* Pods-two-half-passwordTests-PureLayout-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		70F27FE51F87B3562D2AC754 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82825EE4EB404EBEDC3CB329 /* Pods-two-half-passwordTests.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests/Pods-two-half-passwordTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_two_half_passwordTests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C275E28CE3A8C3B3D16E79F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C1844FF5EB8538F7F94D35E /* Pods-PureLayout-Private.xcconfig */;
+			baseConfigurationReference = FA95183FB986B4E725E03581 /* Pods-two-half-password-SwiftyUserDefaults-Private.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -856,286 +997,88 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PureLayout/Pods-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PureLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-PureLayout/Pods-PureLayout.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password-SwiftyUserDefaults/Pods-two-half-password-SwiftyUserDefaults.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
+				PRODUCT_NAME = SwiftyUserDefaults;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		80C51649C822960936F64E61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6F796D2993C6F328EF28556 /* Pods-two-half-password-PureLayout-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password-PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		93796302E558DEE8540A0E0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7DFA552EA2F5B9B0777C957 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A549C268389CF03B9C600607 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B058411443BA9A85A8597FC /* Pods-two-half-password.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password/Pods-two-half-password.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_two_half_password;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B23ABBCBB543B195AE288E59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6F796D2993C6F328EF28556 /* Pods-two-half-password-PureLayout-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password-PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password-PureLayout/Pods-two-half-password-PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B2FE03836F195F5B78C16044 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD6E9D27A15B822A0A5DE2C1 /* Pods-two-half-passwordTests-PureLayout-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-passwordTests-PureLayout/Pods-two-half-passwordTests-PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CAFD68B9A872F798687360E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D10F1807A482FDE453F104E6 /* Pods-two-half-password.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-two-half-password/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-two-half-password/Pods-two-half-password.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_two_half_password;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E5383A961A1A77CCB213C76C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C1844FF5EB8538F7F94D35E /* Pods-PureLayout-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PureLayout/Pods-PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-PureLayout/Pods-PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F26BC0D1CBEA387E1DE1EE1 /* Build configuration list for PBXProject "Pods" */ = {
+		31711B0708F9D8C55FA51946 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0DCE105804BDD56BB572F3AC /* Debug */,
-				06BC92776AF57CCD13F1935B /* Release */,
+				B2590620455D451341F9A23B /* Debug */,
+				A9D01F2275481F8E40A48560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1356808CD55654E4591E83A5 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		4723A8E24BB94D9003036C20 /* Build configuration list for PBXNativeTarget "Pods-two-half-password" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93796302E558DEE8540A0E0C /* Debug */,
-				3BF15E816D4B199EAA05550B /* Release */,
+				97765EF0D3A44AE52AF7FECD /* Debug */,
+				0987CE3289A86C8BEB0084E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B9287771A387AFD4A83286A /* Build configuration list for PBXNativeTarget "Pods-two-half-password-PureLayout" */ = {
+		690F05D54A479B42ADC5159C /* Build configuration list for PBXNativeTarget "Pods-SwiftyUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B23ABBCBB543B195AE288E59 /* Debug */,
-				80C51649C822960936F64E61 /* Release */,
+				384DC0955A8C5F2356133C16 /* Debug */,
+				D2EBAE98A9497DEB39FE5D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		327F2D3A2D62A8488C69D00B /* Build configuration list for PBXNativeTarget "Pods-PureLayout" */ = {
+		777DDC59E4440A19979856C7 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests-SwiftyUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5383A961A1A77CCB213C76C /* Debug */,
-				7C275E28CE3A8C3B3D16E79F /* Release */,
+				5255710D80E7B0C2FAA89837 /* Debug */,
+				9A538E35EF05111805D645AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3798EFEC49C1E0CC5873763F /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests" */ = {
+		A07F4ECB230A16132DE7BB78 /* Build configuration list for PBXNativeTarget "Pods-two-half-password-SwiftyUserDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70F27FE51F87B3562D2AC754 /* Debug */,
-				0C23B27EEC109BF69AAD18DF /* Release */,
+				0EA3DB8285E95AD62F15910D /* Debug */,
+				EEE798B5A151EB6C0F8A65E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B6A9B9BE5ECB04D940BC628 /* Build configuration list for PBXNativeTarget "Pods-two-half-password" */ = {
+		B1BA82975A57966978708B12 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAFD68B9A872F798687360E3 /* Debug */,
-				A549C268389CF03B9C600607 /* Release */,
+				1CB4B006CB6D21A75448D071 /* Debug */,
+				A822EF5393FC403EE0E82E98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B28CAFAA861D38B85F33770 /* Build configuration list for PBXNativeTarget "Pods-two-half-passwordTests-PureLayout" */ = {
+		DEA4A382A94047BD6B9186F3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				529AC96224F548A94BE415EE /* Debug */,
-				B2FE03836F195F5B78C16044 /* Release */,
+				9CF49D6762811479F431DA36 /* Debug */,
+				11CF7ACAC984DD71F85CF90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C2728902A54297DD97D61808 /* Project object */;
+	rootObject = FDB0A30BBABC3DBFD2B5F777 /* Project object */;
 }

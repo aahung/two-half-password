@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-PureLayout.xcscheme</key>
+		<key>Pods-SwiftyUserDefaults.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-two-half-password-PureLayout.xcscheme</key>
+		<key>Pods-two-half-password-SwiftyUserDefaults.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-two-half-passwordTests-PureLayout.xcscheme</key>
+		<key>Pods-two-half-passwordTests-SwiftyUserDefaults.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F1AA3817CEE2F6A97498753</key>
+		<key>464EF498EA1AA86277371783</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>29B399AA37EDA1D5B3889FD2</key>
+		<key>46F6B0D6452BC0ABC1F714B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34B45194323FD8D1CFFEB980</key>
+		<key>6954C04B66C442EDF3E0F18A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>795E81AEDE72313747AF762E</key>
+		<key>BAD8B758D8EBDB4EC0BC768B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF8838B4E7B86F229BB72CE3</key>
+		<key>E6EE535BB8735928E0CAC6E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C88A8200875E02A32C16ECEE</key>
+		<key>E79A3ECEC4E9E260F6F04E5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

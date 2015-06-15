@@ -22,6 +22,12 @@
 		B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */; };
 		B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
 		B26BB8001B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
+		B27AAED31B2E129800E5BAA7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAED21B2E129800E5BAA7 /* MainViewController.swift */; };
+		B27AAED61B2E1BB400E5BAA7 /* VaultSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAED51B2E1BB400E5BAA7 /* VaultSelectionViewController.swift */; };
+		B27AAEDC1B2E1C6C00E5BAA7 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */; };
+		B27AAEDD1B2E1C6C00E5BAA7 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */; };
+		B27AAEDF1B2E2C6E00E5BAA7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */; };
+		B27AAEE11B2E724E00E5BAA7 /* VaultSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */; };
 		B2FE32D21B2BFBDB00020381 /* UnlockKeysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,11 @@
 		B264BBDB1B2BF63C0075C372 /* two_half_passwordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = two_half_passwordUITests.swift; sourceTree = "<group>"; };
 		B264BBDD1B2BF63C0075C372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26BB7FE1B2D10570074FCE3 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B27AAED21B2E129800E5BAA7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		B27AAED51B2E1BB400E5BAA7 /* VaultSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultSelectionViewController.swift; path = Controllers/VaultSelectionViewController.swift; sourceTree = "<group>"; };
+		B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vault.swift; path = Models/Vault.swift; sourceTree = "<group>"; };
+		B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Controllers/AuthViewController.swift; sourceTree = "<group>"; };
+		B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultSelectionTests.swift; path = pre/VaultSelectionTests.swift; sourceTree = "<group>"; };
 		B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnlockKeysTest.swift; path = pre/UnlockKeysTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +105,7 @@
 			children = (
 				B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */,
 				B26BB7FE1B2D10570074FCE3 /* Crypto.swift */,
+				B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -132,7 +144,7 @@
 				B21E393F1B2CA49800C87EB1 /* Models */,
 				B21E39441B2CC40D00C87EB1 /* Bridgings */,
 				B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */,
-				B264BBC01B2BF63C0075C372 /* ViewController.swift */,
+				B27AAED41B2E12A500E5BAA7 /* Controllers */,
 				B264BBC21B2BF63C0075C372 /* Assets.xcassets */,
 				B264BBC41B2BF63C0075C372 /* Main.storyboard */,
 				B264BBC71B2BF63C0075C372 /* Info.plist */,
@@ -146,6 +158,7 @@
 				B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */,
 				B264BBD21B2BF63C0075C372 /* Info.plist */,
 				B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */,
+				B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */,
 			);
 			path = "two-half-passwordTests";
 			sourceTree = "<group>";
@@ -157,6 +170,17 @@
 				B264BBDD1B2BF63C0075C372 /* Info.plist */,
 			);
 			path = "two-half-passwordUITests";
+			sourceTree = "<group>";
+		};
+		B27AAED41B2E12A500E5BAA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B264BBC01B2BF63C0075C372 /* ViewController.swift */,
+				B27AAED21B2E129800E5BAA7 /* MainViewController.swift */,
+				B27AAED51B2E1BB400E5BAA7 /* VaultSelectionViewController.swift */,
+				B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		B81C59DFD46910B2FB48459D /* Pods */ = {
@@ -371,6 +395,10 @@
 				B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
 				B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */,
 				B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */,
+				B27AAEDF1B2E2C6E00E5BAA7 /* AuthViewController.swift in Sources */,
+				B27AAED61B2E1BB400E5BAA7 /* VaultSelectionViewController.swift in Sources */,
+				B27AAEDC1B2E1C6C00E5BAA7 /* Vault.swift in Sources */,
+				B27AAED31B2E129800E5BAA7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +410,8 @@
 				B21E39421B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
 				B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */,
 				B2FE32D21B2BFBDB00020381 /* UnlockKeysTest.swift in Sources */,
+				B27AAEDD1B2E1C6C00E5BAA7 /* Vault.swift in Sources */,
+				B27AAEE11B2E724E00E5BAA7 /* VaultSelectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

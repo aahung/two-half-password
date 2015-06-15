@@ -3,7 +3,8 @@
 link_with ['two-half-password', 'two-half-passwordTests']
 use_frameworks!
 
-pod 'PureLayout'
+pod 'SwiftyUserDefaults'
+# pod 'PureLayout'
 # pod 'CryptoSwift'
 # pod 'RNCryptor'
 
