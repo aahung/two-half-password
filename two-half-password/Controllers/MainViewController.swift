@@ -84,6 +84,9 @@ class MainViewController: NSViewController {
         case "authEmbed"?:
             let authViewController = segue.destinationController as! AuthViewController
             authViewController.mainViewController = self
+        case "vaultEmbed"?:
+            let vaultViewController = segue.destinationController as! VaultViewController
+            vaultViewController.vault = vault
         default:
             let _ = 0
         }

@@ -17,6 +17,7 @@ class Vault: NSObject {
     var path: String
     var host: Host
     var encryptionKey: NSData?
+    var items: [VaultItem] = []
     
     init(path: String, host: Vault.Host) {
         self.path = path
@@ -36,15 +37,26 @@ class Vault: NSObject {
         return "\(mainDirectoryPath())/encryptionKeys.js"
     }
     
-    enum AuthenticationError: ErrorType {
-        case FailLoadEncryptionKeyFile
-        case InvalidEncryptionKeyFile
+    func contentHubPath() -> String {
+        return "\(mainDirectoryPath())/contents.js"
+    }
+    
+    enum VaultError {
+        enum AuthenticationError: ErrorType {
+            case FailLoadEncryptionKeyFile
+            case InvalidEncryptionKeyFile
+        }
+        
+        enum LoadContentError: ErrorType {
+            case FailLoadFile
+            case InvalidFile
+        }
     }
     
     func authenticate(password: String) throws {
         let encryptionKeysData = NSData(contentsOfFile: encryptionKeyPath())
         guard (encryptionKeysData != nil) else {
-            throw AuthenticationError.FailLoadEncryptionKeyFile
+            throw VaultError.AuthenticationError.FailLoadEncryptionKeyFile
         }
         
         var encryptionKeysDictionary: NSDictionary!
@@ -52,7 +64,7 @@ class Vault: NSObject {
         do {
             encryptionKeysDictionary = try NSJSONSerialization.JSONObjectWithData(encryptionKeysData!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
         } catch {
-            throw AuthenticationError.InvalidEncryptionKeyFile
+            throw VaultError.AuthenticationError.InvalidEncryptionKeyFile
         }
         
         var encryptionKeys: EncryptionKeys?
@@ -61,9 +73,32 @@ class Vault: NSObject {
             encryptionKeys = try EncryptionKeys(dictionary: encryptionKeysDictionary)
         }
         catch {
-            throw AuthenticationError.InvalidEncryptionKeyFile
+            throw VaultError.AuthenticationError.InvalidEncryptionKeyFile
         }
         
         encryptionKey = try encryptionKeys!.SL5EncryptionKey().getDecryptedEncryptionKey(password)
+    }
+    
+    func loadContents() throws {
+        let contentHubData = NSData(contentsOfFile: contentHubPath())
+        guard (contentHubData != nil) else {
+            throw VaultError.LoadContentError.FailLoadFile
+        }
+        
+        var contentHubArray: NSArray!
+        
+        do {
+            contentHubArray = try NSJSONSerialization.JSONObjectWithData(contentHubData!, options: NSJSONReadingOptions.AllowFragments) as! NSArray
+        } catch {
+            throw VaultError.LoadContentError.InvalidFile
+        }
+        
+        for contentArray in contentHubArray {
+            do {
+                items.append(try VaultItem(array: contentArray as! NSArray))
+            } catch {
+                
+            }
+        }
     }
 }
