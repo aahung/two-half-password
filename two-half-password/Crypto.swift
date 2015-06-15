@@ -57,4 +57,9 @@ class Crypto {
         
         return (aesKey, iv)
     }
+    
+    class func extractSaltAndCipher(data: NSData) -> (salt: NSData, cipher: NSData) {
+        return (data.subdataWithRange(NSMakeRange(8, 8)),
+            data.subdataWithRange(NSMakeRange(16, data.length - 16)))
+    }
 }

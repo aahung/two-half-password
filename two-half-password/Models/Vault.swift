@@ -29,6 +29,10 @@ class Vault: NSObject {
         self.host = Host(rawValue: host)!
     }
     
+    func unlocked() -> Bool {
+        return encryptionKey != nil
+    }
+    
     func mainDirectoryPath() -> String {
         return "\(path)/data/default"
     }
@@ -95,7 +99,7 @@ class Vault: NSObject {
         
         for contentArray in contentHubArray {
             do {
-                items.append(try VaultItem(array: contentArray as! NSArray))
+                items.append(try VaultItem(vault: self, array: contentArray as! NSArray))
             } catch {
                 
             }

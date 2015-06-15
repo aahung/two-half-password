@@ -10,6 +10,8 @@ import Cocoa
 
 class VaultOutlineViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate {
 
+    var vaultViewController: VaultViewController!
+    
     @IBOutlet weak var outlineView: NSOutlineView!
     class Category: NSObject {
         var type: String
@@ -80,6 +82,19 @@ class VaultOutlineViewController: NSViewController, NSOutlineViewDataSource, NSO
             } else {
                 return (item as! VaultItem).title
             }
+        }
+    }
+    
+    func outlineViewSelectionDidChange(notification: NSNotification) {
+        let row = outlineView.selectedRow
+        guard (row >= 0) else {
+            return
+        }
+        
+        let item = outlineView.itemAtRow(row)
+        
+        if item != nil && !(item is Category) {
+            vaultViewController.didSelectVaultItem(item as! VaultItem)
         }
     }
 }

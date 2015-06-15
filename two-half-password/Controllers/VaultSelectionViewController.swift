@@ -30,15 +30,6 @@ class VaultSelectionViewController: NSViewController, NSTableViewDataSource, NST
     @IBOutlet weak var selectButton: NSButton!
     @IBOutlet weak var tableView: NSTableView?
     
-    @IBAction func tableViewAction(sender: AnyObject) {
-        let row = tableView!.selectedRow
-        guard (row >= 0) else {
-            selectedVault = nil
-            return
-        }
-        selectedVault = vaults[row]
-    }
-    
     @IBAction func select(sender: AnyObject) {
         mainViewController!.vault = selectedVault
         self.dismissController(self)
@@ -101,5 +92,13 @@ class VaultSelectionViewController: NSViewController, NSTableViewDataSource, NST
         return 60
     }
     
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        let row = tableView!.selectedRow
+        guard (row >= 0) else {
+            selectedVault = nil
+            return
+        }
+        selectedVault = vaults[row]
+    }
     
 }

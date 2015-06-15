@@ -11,6 +11,8 @@
 		2C23DB10763C86FE179482A8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EEF816557517CC951F416B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		36B56C113B340DA31EDAF0DE /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		AE132115212C99F2528F7EBB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EEF816557517CC951F416B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B20163201B2F56B800A4C90E /* decryptItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201631F1B2F56B800A4C90E /* decryptItemTests.swift */; };
+		B20163221B2F67B100A4C90E /* VaultItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */; };
 		B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */; };
 		B21E39421B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */; };
 		B21E39471B2CCD2300C87EB1 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */; };
@@ -49,6 +51,8 @@
 		083F017C9318A9B0BD9CA45A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		59C5B0850FD5DA92BD8FA233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		93EEF816557517CC951F416B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B201631F1B2F56B800A4C90E /* decryptItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = decryptItemTests.swift; path = pre/decryptItemTests.swift; sourceTree = "<group>"; };
+		B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultItemDetailViewController.swift; path = Controllers/VaultItemDetailViewController.swift; sourceTree = "<group>"; };
 		B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptionKeys.swift; path = Models/EncryptionKeys.swift; sourceTree = "<group>"; };
 		B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		B264BBBB1B2BF63C0075C372 /* two-half-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "two-half-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +171,7 @@
 				B264BBD21B2BF63C0075C372 /* Info.plist */,
 				B2FE32D11B2BFBDB00020381 /* UnlockKeysTest.swift */,
 				B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */,
+				B201631F1B2F56B800A4C90E /* decryptItemTests.swift */,
 			);
 			path = "two-half-passwordTests";
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */,
 				B2D6B6B41B2EB833008A364D /* VaultViewController.swift */,
 				B2D6B6B91B2EBFCC008A364D /* VaultOutlineViewController.swift */,
+				B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */,
 				B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
 				B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */,
+				B20163221B2F67B100A4C90E /* VaultItemDetailViewController.swift in Sources */,
 				B2D6B6B51B2EB833008A364D /* VaultViewController.swift in Sources */,
 				B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */,
 				B2D6B6B71B2EBD69008A364D /* VaultItem.swift in Sources */,
@@ -425,6 +432,7 @@
 				B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */,
 				B2FE32D21B2BFBDB00020381 /* UnlockKeysTest.swift in Sources */,
 				B27AAEDD1B2E1C6C00E5BAA7 /* Vault.swift in Sources */,
+				B20163201B2F56B800A4C90E /* decryptItemTests.swift in Sources */,
 				B27AAEE11B2E724E00E5BAA7 /* VaultSelectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

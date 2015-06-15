@@ -10,7 +10,10 @@ import Cocoa
 
 class VaultViewController: NSViewController {
 
-    weak var vaultOutlineViewController: VaultOutlineViewController?
+    weak var vaultOutlineViewController: VaultOutlineViewController!
+    
+    weak var vaultItemDetailViewController: VaultItemDetailViewController!
+    
     var vault: Vault!
     
     override func viewDidLoad() {
@@ -32,7 +35,11 @@ class VaultViewController: NSViewController {
             alert.runModal()
         }
         
-        vaultOutlineViewController?.addItems(vault.items)
+        vaultOutlineViewController.addItems(vault.items)
+    }
+    
+    func didSelectVaultItem(item: VaultItem) {
+        vaultItemDetailViewController.showItem(item)
     }
     
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
@@ -40,7 +47,10 @@ class VaultViewController: NSViewController {
         print("segue with identifier \(id) triggered")
         switch id {
         case "outlineEmbed"?:
-            vaultOutlineViewController = segue.destinationController as? VaultOutlineViewController
+            vaultOutlineViewController = segue.destinationController as! VaultOutlineViewController
+            vaultOutlineViewController.vaultViewController = self
+        case "detailEmbed"?:
+            vaultItemDetailViewController = segue.destinationController as! VaultItemDetailViewController
         default:
             let _ = 0
         }
