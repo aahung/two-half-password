@@ -4,6 +4,7 @@ link_with ['two-half-password', 'two-half-passwordTests']
 use_frameworks!
 
 pod 'SwiftyUserDefaults'
+pod 'Sparkle', '~> 1.9'
 # pod 'PureLayout'
 # pod 'CryptoSwift'
 # pod 'RNCryptor'

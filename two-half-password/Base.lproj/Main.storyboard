@@ -21,6 +21,12 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Check for Update..." id="APJ-tl-Mai">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="EQa-Q2-V9J" id="nvw-E1-rRE"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -644,6 +650,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="two_half_password" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="EQa-Q2-V9J" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
@@ -653,6 +660,7 @@
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="2half Password" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
                         <rect key="contentRect" x="597" y="381" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="270"/>
@@ -712,28 +720,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-ef-Fj7">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <subviews>
+                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="8Rj-Dr-act">
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                        <connections>
+                                            <segue destination="xca-06-xg2" kind="embed" identifier="vaultEmbed" id="WQh-8B-QLj"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8Rj-Dr-act" secondAttribute="bottom" id="DOR-bD-keW"/>
+                                    <constraint firstItem="8Rj-Dr-act" firstAttribute="leading" secondItem="fJe-ef-Fj7" secondAttribute="leading" id="OfF-Ri-AYR"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Rj-Dr-act" secondAttribute="trailing" id="beN-1x-puB"/>
+                                    <constraint firstItem="8Rj-Dr-act" firstAttribute="top" secondItem="fJe-ef-Fj7" secondAttribute="top" id="qPa-WU-sVU"/>
+                                </constraints>
+                            </visualEffectView>
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="dND-2v-PgQ" userLabel="auth Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <connections>
                                     <segue destination="Pd8-Dx-RF2" kind="embed" identifier="authEmbed" id="WyR-pJ-IqA"/>
                                 </connections>
                             </containerView>
-                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="8Rj-Dr-act">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <connections>
-                                    <segue destination="xca-06-xg2" kind="embed" identifier="vaultEmbed" id="WQh-8B-QLj"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="8Rj-Dr-act" firstAttribute="bottom" secondItem="dND-2v-PgQ" secondAttribute="bottom" id="78x-jz-KvS"/>
-                            <constraint firstItem="8Rj-Dr-act" firstAttribute="top" secondItem="dND-2v-PgQ" secondAttribute="top" id="EZZ-yw-PhV"/>
                             <constraint firstItem="dND-2v-PgQ" firstAttribute="top" secondItem="fpu-7j-vua" secondAttribute="top" id="GPi-17-mmU"/>
-                            <constraint firstItem="8Rj-Dr-act" firstAttribute="leading" secondItem="dND-2v-PgQ" secondAttribute="leading" id="HhY-GP-xUT"/>
+                            <constraint firstItem="fJe-ef-Fj7" firstAttribute="top" secondItem="dND-2v-PgQ" secondAttribute="top" id="LUU-yp-jaf"/>
+                            <constraint firstItem="fJe-ef-Fj7" firstAttribute="leading" secondItem="dND-2v-PgQ" secondAttribute="leading" id="NCK-7z-kOa"/>
                             <constraint firstAttribute="trailing" secondItem="dND-2v-PgQ" secondAttribute="trailing" id="NHh-cD-W1r"/>
                             <constraint firstItem="dND-2v-PgQ" firstAttribute="leading" secondItem="fpu-7j-vua" secondAttribute="leading" id="Oh9-xM-dIN"/>
+                            <constraint firstItem="fJe-ef-Fj7" firstAttribute="bottom" secondItem="dND-2v-PgQ" secondAttribute="bottom" id="Qc7-ji-DKR"/>
+                            <constraint firstItem="fJe-ef-Fj7" firstAttribute="trailing" secondItem="dND-2v-PgQ" secondAttribute="trailing" id="ZL9-pK-9zI"/>
                             <constraint firstAttribute="bottom" secondItem="dND-2v-PgQ" secondAttribute="bottom" id="b3M-te-5hB"/>
-                            <constraint firstItem="8Rj-Dr-act" firstAttribute="trailing" secondItem="dND-2v-PgQ" secondAttribute="trailing" id="lb6-Ym-uYo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -947,7 +966,7 @@
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnz-NR-wW7">
                                 <rect key="frame" x="0.0" y="0.0" width="181" height="300"/>
-                                <clipView key="contentView" id="Xzm-mj-Ozo">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Xzm-mj-Ozo">
                                     <rect key="frame" x="1" y="1" width="179" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -955,7 +974,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="179" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
-                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
                                                 <tableColumn identifier="co" editable="NO" width="176" minWidth="40" maxWidth="1000" id="LCU-zE-aNo">
@@ -966,7 +985,7 @@
                                                     </tableHeaderCell>
                                                     <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="2dC-aL-dkD">
                                                         <font key="font" metaFont="system"/>
-                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
@@ -991,10 +1010,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Xnz-NR-wW7" firstAttribute="leading" secondItem="pZd-3P-x63" secondAttribute="leading" id="8WZ-bE-n53"/>
-                            <constraint firstItem="Xnz-NR-wW7" firstAttribute="top" secondItem="pZd-3P-x63" secondAttribute="top" id="9Xe-fr-L7K"/>
-                            <constraint firstAttribute="bottom" secondItem="Xnz-NR-wW7" secondAttribute="bottom" id="Kah-7a-9ya"/>
-                            <constraint firstAttribute="trailing" secondItem="Xnz-NR-wW7" secondAttribute="trailing" id="Q3g-WL-ouF"/>
+                            <constraint firstItem="Xnz-NR-wW7" firstAttribute="top" secondItem="pZd-3P-x63" secondAttribute="top" id="Hod-5m-b7s"/>
+                            <constraint firstAttribute="bottom" secondItem="Xnz-NR-wW7" secondAttribute="bottom" id="IpT-Fq-oGI"/>
+                            <constraint firstItem="Xnz-NR-wW7" firstAttribute="leading" secondItem="pZd-3P-x63" secondAttribute="leading" id="au8-ZA-roD"/>
+                            <constraint firstAttribute="trailing" secondItem="Xnz-NR-wW7" secondAttribute="trailing" id="mRL-jQ-TrO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1023,11 +1042,11 @@
                             </textField>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wop-9M-PVU">
                                 <rect key="frame" x="20" y="20" width="410" height="199"/>
-                                <clipView key="contentView" id="9D2-mO-HsE">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="9D2-mO-HsE">
                                     <rect key="frame" x="1" y="1" width="408" height="197"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="6w4-v3-l9K">
+                                        <textView drawsBackground="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="6w4-v3-l9K">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="197"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1061,6 +1080,7 @@
                     </view>
                     <connections>
                         <outlet property="jsonDumpField" destination="6w4-v3-l9K" id="YpT-Vp-To9"/>
+                        <outlet property="titleField" destination="Qy5-7w-B1U" id="C2w-na-fiX"/>
                     </connections>
                 </viewController>
                 <customObject id="veK-QY-9Sc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1088,7 +1108,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="1zQ-pB-tcF"/>
                                 </constraints>
-                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="center" placeholderString="please" drawsBackground="YES" usesSingleLineMode="YES" id="PbH-Y6-ftZ">
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="center" placeholderString="please" usesSingleLineMode="YES" id="PbH-Y6-ftZ">
                                     <font key="font" metaFont="system" size="27"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

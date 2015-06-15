@@ -13,6 +13,7 @@ class VaultItemDetailViewController: NSViewController {
     var item: VaultItem?
     
     @IBOutlet var jsonDumpField: NSTextView!
+    @IBOutlet weak var titleField: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,14 @@ class VaultItemDetailViewController: NSViewController {
         
         guard (item != nil) else {
             // hide everything
+            titleField.hidden = true
             return
         }
         
+        titleField.hidden = false
+        
         do {
+            titleField.stringValue = item!.title
             let info = try item?.info()
             let dictionary = info?.valueForKey("decrypted") as! NSDictionary
             jsonDumpField.string = "\(dictionary)"
