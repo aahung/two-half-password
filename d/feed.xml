@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:atom='http://www.andymatuschak.org/xml-namespaces/sparkle' version='2.0'>
+  <channel>
+    <title>2halp Password</title>
+    <description>Simple OS X client for 1Password</description>
+    <language>en</language>
+    <pubDate>Thu, 15 Jun 2015 22:12:57 -0700</pubDate>
+    <link>http://aahung.github.io/two-half-password/d/feed.xml</link>
+    <atom:link type='application/rss+xml' href='http://aahung.github.io/two-half-password/d/feed.xml'/>
+    <item>
+      <title>2halt Password</title>
+      <sparkle:releaseNotesLink>http://aahung.github.io/two-half-password</sparkle:releaseNotesLink>
+      <pubDate>Thu, 07 Aug 2014 22:12:57 -0700</pubDate>
+      <guid isPermaLink='false'>2halt Password 0.1a</guid>
+      <enclosure type='application/octet-stream' sparkle:version='2' url='http://aahung.github.io/two-half-password/d/two-half-password.app.zip'/>
+    </item>
+  </channel>
+</rss>
