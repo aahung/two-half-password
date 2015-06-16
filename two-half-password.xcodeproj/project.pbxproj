@@ -55,7 +55,7 @@
 		B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultItemDetailViewController.swift; path = Controllers/VaultItemDetailViewController.swift; sourceTree = "<group>"; };
 		B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptionKeys.swift; path = Models/EncryptionKeys.swift; sourceTree = "<group>"; };
 		B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
-		B264BBBB1B2BF63C0075C372 /* two-half-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "two-half-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B264BBBB1B2BF63C0075C372 /* 2half Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2half Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B264BBC01B2BF63C0075C372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B264BBC21B2BF63C0075C372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		B264BBBC1B2BF63C0075C372 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B264BBBB1B2BF63C0075C372 /* two-half-password.app */,
+				B264BBBB1B2BF63C0075C372 /* 2half Password.app */,
 				B264BBCC1B2BF63C0075C372 /* two-half-passwordTests.xctest */,
 			);
 			name = Products;
@@ -228,7 +228,7 @@
 			);
 			name = "two-half-password";
 			productName = "two-half-password";
-			productReference = B264BBBB1B2BF63C0075C372 /* two-half-password.app */;
+			productReference = B264BBBB1B2BF63C0075C372 /* 2half Password.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B264BBCB1B2BF63C0075C372 /* two-half-passwordTests */ = {
@@ -553,7 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "2half Password";
 			};
 			name = Debug;
 		};
@@ -567,7 +567,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "2half Password";
 			};
 			name = Release;
 		};
