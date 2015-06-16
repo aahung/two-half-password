@@ -39,6 +39,17 @@ class VaultOutlineViewController: NSViewController, NSOutlineViewDataSource, NSO
             category.items.addObject(item)
         }
         
+        for key in self.items.allKeys as! [String] {
+            let value = self.items.valueForKey(key) as! Category
+            value.items.sortUsingComparator({ (this, that) -> NSComparisonResult in
+                if (this as! VaultItem).title < (that as! VaultItem).title {
+                    return NSComparisonResult.OrderedAscending
+                } else {
+                    return NSComparisonResult.OrderedDescending
+                }
+            })
+        }
+        
         outlineView.reloadData()
         outlineView.expandItem(nil, expandChildren: true)
     }
