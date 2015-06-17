@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_Sparkle 10
 #define COCOAPODS_VERSION_PATCH_Sparkle 0
 
+// SwiftyTimer
+#define COCOAPODS_POD_AVAILABLE_SwiftyTimer
+#define COCOAPODS_VERSION_MAJOR_SwiftyTimer 1
+#define COCOAPODS_VERSION_MINOR_SwiftyTimer 1
+#define COCOAPODS_VERSION_PATCH_SwiftyTimer 0
+
 // SwiftyUserDefaults
 #define COCOAPODS_POD_AVAILABLE_SwiftyUserDefaults
 #define COCOAPODS_VERSION_MAJOR_SwiftyUserDefaults 1

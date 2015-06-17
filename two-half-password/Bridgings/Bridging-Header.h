@@ -6,9 +6,10 @@
 //  Copyright © 2015 ParseCool. All rights reserved.
 //
 
-#ifndef CommonCrypto_Bridging_Header_h
-#define CommonCrypto_Bridging_Header_h
+#ifndef Bridging_Header_h
+#define Bridging_Header_h
 
 #import <CommonCrypto/CommonCrypto.h>
+#import "MBProgressHUD.h"
 
-#endif /* CommonCrypto_Bridging_Header_h */
+#endif /* Bridging_Header_h */

@@ -5,6 +5,7 @@ use_frameworks!
 
 pod 'SwiftyUserDefaults'
 pod 'Sparkle', '~> 1.9'
+pod 'SwiftyTimer'
 # pod 'PureLayout'
 # pod 'CryptoSwift'
 # pod 'RNCryptor'

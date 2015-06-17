@@ -17,6 +17,7 @@
 		B21E39421B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */; };
 		B21E39471B2CCD2300C87EB1 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */; };
 		B21E39481B2CCD3000C87EB1 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */; };
+		B24DEB091B31373300DA086F /* VaultItemDetailSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24DEB081B31373300DA086F /* VaultItemDetailSubViewController.swift */; };
 		B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */; };
 		B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBC01B2BF63C0075C372 /* ViewController.swift */; };
 		B264BBC31B2BF63C0075C372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B264BBC21B2BF63C0075C372 /* Assets.xcassets */; };
@@ -24,6 +25,10 @@
 		B264BBD11B2BF63C0075C372 /* two_half_passwordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264BBD01B2BF63C0075C372 /* two_half_passwordTests.swift */; };
 		B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
 		B26BB8001B2D10570074FCE3 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BB7FE1B2D10570074FCE3 /* Crypto.swift */; };
+		B2753D9F1B3144DE0026798C /* webforms_WebFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753D9E1B3144DE0026798C /* webforms_WebFormViewController.swift */; };
+		B2753DA11B3148370026798C /* UnsupportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753DA01B3148370026798C /* UnsupportedViewController.swift */; };
+		B2753DA31B314DC30026798C /* PopoverLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753DA21B314DC30026798C /* PopoverLabelViewController.swift */; };
+		B2753DAA1B3154940026798C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2753DA91B3154940026798C /* MBProgressHUD.m */; };
 		B27AAED31B2E129800E5BAA7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAED21B2E129800E5BAA7 /* MainViewController.swift */; };
 		B27AAED61B2E1BB400E5BAA7 /* VaultSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAED51B2E1BB400E5BAA7 /* VaultSelectionViewController.swift */; };
 		B27AAEDC1B2E1C6C00E5BAA7 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */; };
@@ -55,6 +60,7 @@
 		B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultItemDetailViewController.swift; path = Controllers/VaultItemDetailViewController.swift; sourceTree = "<group>"; };
 		B21E39401B2CA4E900C87EB1 /* EncryptionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptionKeys.swift; path = Models/EncryptionKeys.swift; sourceTree = "<group>"; };
 		B21E39461B2CCD2300C87EB1 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
+		B24DEB081B31373300DA086F /* VaultItemDetailSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultItemDetailSubViewController.swift; path = Controllers/VaultItemDetailSubViewController.swift; sourceTree = "<group>"; };
 		B264BBBB1B2BF63C0075C372 /* 2half Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2half Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B264BBC01B2BF63C0075C372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,12 @@
 		B264BBDB1B2BF63C0075C372 /* two_half_passwordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = two_half_passwordUITests.swift; sourceTree = "<group>"; };
 		B264BBDD1B2BF63C0075C372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26BB7FE1B2D10570074FCE3 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B2753D9E1B3144DE0026798C /* webforms_WebFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = webforms_WebFormViewController.swift; path = Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift; sourceTree = "<group>"; };
+		B2753DA01B3148370026798C /* UnsupportedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnsupportedViewController.swift; path = Controllers/VaultItemDetailSubViewControllers/UnsupportedViewController.swift; sourceTree = "<group>"; };
+		B2753DA21B314DC30026798C /* PopoverLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopoverLabelViewController.swift; path = Controllers/PopoverLabelViewController.swift; sourceTree = "<group>"; };
+		B2753DA41B3153020026798C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridgings/Bridging-Header.h"; sourceTree = "<group>"; };
+		B2753DA81B3154940026798C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		B2753DA91B3154940026798C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		B27AAED21B2E129800E5BAA7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		B27AAED51B2E1BB400E5BAA7 /* VaultSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultSelectionViewController.swift; path = Controllers/VaultSelectionViewController.swift; sourceTree = "<group>"; };
 		B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vault.swift; path = Models/Vault.swift; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 		B21E39441B2CC40D00C87EB1 /* Bridgings */ = {
 			isa = PBXGroup;
 			children = (
+				B2753DA41B3153020026798C /* Bridging-Header.h */,
 			);
 			name = Bridgings;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 		B264BBBD1B2BF63C0075C372 /* two-half-password */ = {
 			isa = PBXGroup;
 			children = (
+				B2753DAB1B3154A70026798C /* MBProgressHUD */,
 				B21E393F1B2CA49800C87EB1 /* Models */,
 				B21E39441B2CC40D00C87EB1 /* Bridgings */,
 				B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */,
@@ -185,6 +199,24 @@
 			path = "two-half-passwordUITests";
 			sourceTree = "<group>";
 		};
+		B2753D9D1B3144820026798C /* VaultItemDetailSubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2753D9E1B3144DE0026798C /* webforms_WebFormViewController.swift */,
+				B2753DA01B3148370026798C /* UnsupportedViewController.swift */,
+			);
+			name = VaultItemDetailSubViewControllers;
+			sourceTree = "<group>";
+		};
+		B2753DAB1B3154A70026798C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B2753DA81B3154940026798C /* MBProgressHUD.h */,
+				B2753DA91B3154940026798C /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		B27AAED41B2E12A500E5BAA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +227,9 @@
 				B2D6B6B41B2EB833008A364D /* VaultViewController.swift */,
 				B2D6B6B91B2EBFCC008A364D /* VaultOutlineViewController.swift */,
 				B20163211B2F67B100A4C90E /* VaultItemDetailViewController.swift */,
+				B24DEB081B31373300DA086F /* VaultItemDetailSubViewController.swift */,
+				B2753D9D1B3144820026798C /* VaultItemDetailSubViewControllers */,
+				B2753DA21B314DC30026798C /* PopoverLabelViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -367,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n\nLOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\n\n# Usually set by Xcode\nCODE_SIGN_IDENTITY=\"Developer ID Application: Haotian Wu\"\n\ncodesign --verbose --force --sign \"$CODE_SIGN_IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF186450B9EFDA61CA9AA796 /* Embed Pods Frameworks */ = {
@@ -410,12 +445,17 @@
 				B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */,
 				B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
 				B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */,
+				B24DEB091B31373300DA086F /* VaultItemDetailSubViewController.swift in Sources */,
+				B2753D9F1B3144DE0026798C /* webforms_WebFormViewController.swift in Sources */,
 				B20163221B2F67B100A4C90E /* VaultItemDetailViewController.swift in Sources */,
 				B2D6B6B51B2EB833008A364D /* VaultViewController.swift in Sources */,
+				B2753DAA1B3154940026798C /* MBProgressHUD.m in Sources */,
 				B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */,
 				B2D6B6B71B2EBD69008A364D /* VaultItem.swift in Sources */,
 				B27AAEDF1B2E2C6E00E5BAA7 /* AuthViewController.swift in Sources */,
+				B2753DA31B314DC30026798C /* PopoverLabelViewController.swift in Sources */,
 				B27AAED61B2E1BB400E5BAA7 /* VaultSelectionViewController.swift in Sources */,
+				B2753DA11B3148370026798C /* UnsupportedViewController.swift in Sources */,
 				B2D6B6BA1B2EBFCC008A364D /* VaultOutlineViewController.swift in Sources */,
 				B27AAEDC1B2E1C6C00E5BAA7 /* Vault.swift in Sources */,
 				B27AAED31B2E129800E5BAA7 /* MainViewController.swift in Sources */,
@@ -554,6 +594,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
 				PRODUCT_NAME = "2half Password";
+				SWIFT_OBJC_BRIDGING_HEADER = "two-half-password/Bridgings/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -568,6 +609,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.xinhong.two-half-password";
 				PRODUCT_NAME = "2half Password";
+				SWIFT_OBJC_BRIDGING_HEADER = "two-half-password/Bridgings/Bridging-Header.h";
 			};
 			name = Release;
 		};
