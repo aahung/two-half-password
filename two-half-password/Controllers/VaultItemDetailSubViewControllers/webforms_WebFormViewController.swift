@@ -52,6 +52,17 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         
     }
     
+    @IBAction func websiteCopyAction(sender: AnyObject) {
+        NSPasteboard.generalPasteboard().clearContents()
+        NSPasteboard.generalPasteboard().writeObjects([websiteField.stringValue])
+        
+        showCopiedHUD()
+    }
+    
+    @IBAction func websiteOpenAction(sender: AnyObject) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: websiteField.stringValue)!)
+    }
+    
     override func displayInfo(dictionary: NSDictionary) {
         // fields
         let fields = dictionary.valueForKey("fields") as! NSArray
@@ -71,9 +82,11 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
             if urls.count > 0 {
                 let firstURL = urls[0] as! NSDictionary
                 let urlString = firstURL.valueForKey("url") as! String
-                let link = NSMutableAttributedString(string: urlString)
-                link.addAttribute(NSLinkAttributeName, value: urlString, range: NSMakeRange(0, link.length))
-                websiteField.attributedStringValue = link
+                if urlString.rangeOfString("http")?.startIndex == urlString.startIndex {
+                    websiteField.stringValue = urlString
+                } else {
+                    websiteField.stringValue = "https://\(urlString)"
+                }
             }
         } else {
             websiteField.stringValue = "no specified"
