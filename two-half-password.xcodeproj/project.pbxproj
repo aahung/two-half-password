@@ -166,13 +166,13 @@
 		B264BBBD1B2BF63C0075C372 /* two-half-password */ = {
 			isa = PBXGroup;
 			children = (
+				B2B30E031B338BB70087FEC9 /* Storyboards */,
 				B2753DAB1B3154A70026798C /* MBProgressHUD */,
 				B21E393F1B2CA49800C87EB1 /* Models */,
 				B21E39441B2CC40D00C87EB1 /* Bridgings */,
 				B264BBBE1B2BF63C0075C372 /* AppDelegate.swift */,
 				B27AAED41B2E12A500E5BAA7 /* Controllers */,
 				B264BBC21B2BF63C0075C372 /* Assets.xcassets */,
-				B264BBC41B2BF63C0075C372 /* Main.storyboard */,
 				B264BBC71B2BF63C0075C372 /* Info.plist */,
 			);
 			path = "two-half-password";
@@ -232,6 +232,14 @@
 				B2753DA21B314DC30026798C /* PopoverLabelViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B2B30E031B338BB70087FEC9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B264BBC41B2BF63C0075C372 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		B81C59DFD46910B2FB48459D /* Pods */ = {

@@ -16,6 +16,9 @@ class VaultItem: NSObject {
     var title: String!
     var urlString: String!
     
+    var contentDictionary: NSMutableDictionary!
+    var decryptedDictionary: NSMutableDictionary!
+    
     enum VaultItemError {
         enum LoadContentError: ErrorType {
             case FailLoadFile
@@ -24,6 +27,10 @@ class VaultItem: NSObject {
         
         enum DecryptError: ErrorType {
             case VaultLocked
+        }
+        
+        enum EncryptError: ErrorType {
+            case MissingEncryptionKey
         }
     }
     
@@ -54,6 +61,8 @@ class VaultItem: NSObject {
         } catch {
             throw VaultItemError.LoadContentError.InvalidFile
         }
+        
+        contentDictionary = NSMutableDictionary(dictionary: dictionary)
         
         return dictionary
     }
@@ -89,7 +98,17 @@ class VaultItem: NSObject {
         
         mutableDictionary.setValue(decryptedDictionary, forKey: "decrypted")
         
+        self.decryptedDictionary = NSMutableDictionary(dictionary: decryptedDictionary)
+        
         return mutableDictionary
+    }
+    
+    func saveContents() throws {
+        guard (vault.encryptionKey != nil) else {
+            throw VaultItemError.EncryptError.MissingEncryptionKey
+        }
+        
+        
     }
     
 }
