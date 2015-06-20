@@ -1,14 +1,17 @@
 PODS:
+  - PureLayout (2.0.6)
   - Sparkle (1.10.0)
   - SwiftyTimer (1.1.0)
   - SwiftyUserDefaults (1.1.0)
 
 DEPENDENCIES:
+  - PureLayout
   - Sparkle (~> 1.9)
   - SwiftyTimer
   - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
+  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
   Sparkle: c859bf5283b9f12aa45bceccf8e25ebb4c008eb2
   SwiftyTimer: 3b1bf42c8b1bb09dff7107b12d3b73cbf700bbce
   SwiftyUserDefaults: ae600cd466daa1420a058d09aefbf45ccb6caf1e

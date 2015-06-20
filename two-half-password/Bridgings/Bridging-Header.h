@@ -11,5 +11,7 @@
 
 #import <CommonCrypto/CommonCrypto.h>
 #import "MBProgressHUD.h"
+#import <PureLayout/PureLayoutDefines.h>
+#import <PureLayout/PureLayout.h>
 
 #endif /* Bridging_Header_h */

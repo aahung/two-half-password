@@ -19,9 +19,6 @@ class VaultItemDetailViewController: NSViewController {
 
     var item: VaultItem?
     
-    @IBOutlet weak var titleField: NSTextField!
-    
-    
     // MARK: Container Views
     @IBOutlet weak var webforms_WebFormsContainerView: NSView!
     @IBOutlet weak var unsupportedContainerView: NSView!
@@ -44,13 +41,8 @@ class VaultItemDetailViewController: NSViewController {
         self.item = item
         
         guard (item != nil) else {
-            // hide everything
-            titleField.hidden = true
             return
         }
-        
-        titleField.hidden = false
-        titleField.stringValue = item!.title
         
         for containerView in containerViews {
             containerView.hidden = true

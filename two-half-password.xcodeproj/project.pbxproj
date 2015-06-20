@@ -35,6 +35,11 @@
 		B27AAEDD1B2E1C6C00E5BAA7 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */; };
 		B27AAEDF1B2E2C6E00E5BAA7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */; };
 		B27AAEE11B2E724E00E5BAA7 /* VaultSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */; };
+		B2A870F21B349EFB00AB3E79 /* THButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A870F11B349EFB00AB3E79 /* THButton.swift */; };
+		B2A870F41B34A19400AB3E79 /* THTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A870F31B34A19400AB3E79 /* THTextField.swift */; };
+		B2A870F61B34A36B00AB3E79 /* THLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A870F51B34A36B00AB3E79 /* THLabel.swift */; };
+		B2A870FA1B34AD0300AB3E79 /* THSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A870F91B34AD0300AB3E79 /* THSecureTextField.swift */; };
+		B2A870FC1B34B71700AB3E79 /* THTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A870FB1B34B71700AB3E79 /* THTextView.swift */; };
 		B2D6B6B51B2EB833008A364D /* VaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6B6B41B2EB833008A364D /* VaultViewController.swift */; };
 		B2D6B6B71B2EBD69008A364D /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6B6B61B2EBD69008A364D /* VaultItem.swift */; };
 		B2D6B6B81B2EBD69008A364D /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6B6B61B2EBD69008A364D /* VaultItem.swift */; };
@@ -84,6 +89,11 @@
 		B27AAEDB1B2E1C6C00E5BAA7 /* Vault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vault.swift; path = Models/Vault.swift; sourceTree = "<group>"; };
 		B27AAEDE1B2E2C6E00E5BAA7 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = Controllers/AuthViewController.swift; sourceTree = "<group>"; };
 		B27AAEE01B2E724E00E5BAA7 /* VaultSelectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultSelectionTests.swift; path = pre/VaultSelectionTests.swift; sourceTree = "<group>"; };
+		B2A870F11B349EFB00AB3E79 /* THButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = THButton.swift; path = Views/THButton.swift; sourceTree = "<group>"; };
+		B2A870F31B34A19400AB3E79 /* THTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = THTextField.swift; path = Views/THTextField.swift; sourceTree = "<group>"; };
+		B2A870F51B34A36B00AB3E79 /* THLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = THLabel.swift; path = Views/THLabel.swift; sourceTree = "<group>"; };
+		B2A870F91B34AD0300AB3E79 /* THSecureTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = THSecureTextField.swift; path = Views/THSecureTextField.swift; sourceTree = "<group>"; };
+		B2A870FB1B34B71700AB3E79 /* THTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = THTextView.swift; path = Views/THTextView.swift; sourceTree = "<group>"; };
 		B2D6B6B41B2EB833008A364D /* VaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultViewController.swift; path = Controllers/VaultViewController.swift; sourceTree = "<group>"; };
 		B2D6B6B61B2EBD69008A364D /* VaultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultItem.swift; path = Models/VaultItem.swift; sourceTree = "<group>"; };
 		B2D6B6B91B2EBFCC008A364D /* VaultOutlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaultOutlineViewController.swift; path = Controllers/VaultOutlineViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +176,7 @@
 		B264BBBD1B2BF63C0075C372 /* two-half-password */ = {
 			isa = PBXGroup;
 			children = (
+				B2A870F01B349ED500AB3E79 /* Views */,
 				B2B30E031B338BB70087FEC9 /* Storyboards */,
 				B2753DAB1B3154A70026798C /* MBProgressHUD */,
 				B21E393F1B2CA49800C87EB1 /* Models */,
@@ -232,6 +243,18 @@
 				B2753DA21B314DC30026798C /* PopoverLabelViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B2A870F01B349ED500AB3E79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2A870F11B349EFB00AB3E79 /* THButton.swift */,
+				B2A870F31B34A19400AB3E79 /* THTextField.swift */,
+				B2A870F51B34A36B00AB3E79 /* THLabel.swift */,
+				B2A870F91B34AD0300AB3E79 /* THSecureTextField.swift */,
+				B2A870FB1B34B71700AB3E79 /* THTextView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B2B30E031B338BB70087FEC9 /* Storyboards */ = {
@@ -451,16 +474,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26BB7FF1B2D10570074FCE3 /* Crypto.swift in Sources */,
+				B2A870F41B34A19400AB3E79 /* THTextField.swift in Sources */,
 				B21E39411B2CA4E900C87EB1 /* EncryptionKeys.swift in Sources */,
 				B264BBC11B2BF63C0075C372 /* ViewController.swift in Sources */,
+				B2A870F61B34A36B00AB3E79 /* THLabel.swift in Sources */,
 				B24DEB091B31373300DA086F /* VaultItemDetailSubViewController.swift in Sources */,
 				B2753D9F1B3144DE0026798C /* webforms_WebFormViewController.swift in Sources */,
+				B2A870F21B349EFB00AB3E79 /* THButton.swift in Sources */,
 				B20163221B2F67B100A4C90E /* VaultItemDetailViewController.swift in Sources */,
 				B2D6B6B51B2EB833008A364D /* VaultViewController.swift in Sources */,
 				B2753DAA1B3154940026798C /* MBProgressHUD.m in Sources */,
 				B264BBBF1B2BF63C0075C372 /* AppDelegate.swift in Sources */,
 				B2D6B6B71B2EBD69008A364D /* VaultItem.swift in Sources */,
 				B27AAEDF1B2E2C6E00E5BAA7 /* AuthViewController.swift in Sources */,
+				B2A870FA1B34AD0300AB3E79 /* THSecureTextField.swift in Sources */,
+				B2A870FC1B34B71700AB3E79 /* THTextView.swift in Sources */,
 				B2753DA31B314DC30026798C /* PopoverLabelViewController.swift in Sources */,
 				B27AAED61B2E1BB400E5BAA7 /* VaultSelectionViewController.swift in Sources */,
 				B2753DA11B3148370026798C /* UnsupportedViewController.swift in Sources */,
