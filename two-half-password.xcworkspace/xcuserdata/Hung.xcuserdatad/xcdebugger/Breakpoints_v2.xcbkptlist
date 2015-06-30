@@ -518,11 +518,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
-            timestampString = "456437431.840243"
+            timestampString = "456477393.882303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "webforms_WebFormViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -534,11 +534,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
-            timestampString = "456443250.169627"
+            timestampString = "456478045.561373"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
             landmarkName = "usernameCopyAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -550,11 +550,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
-            timestampString = "456437790.881801"
+            timestampString = "456477393.882303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
             landmarkName = "webforms_WebFormViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -566,12 +566,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
-            timestampString = "456460778.901056"
+            timestampString = "456478782.509029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
-            landmarkName = "displayInfo(_:)"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
+            landmarkName = "displayInfo()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -582,12 +582,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
-            timestampString = "456460778.901056"
+            timestampString = "456478782.509029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "380"
-            endingLineNumber = "380"
-            landmarkName = "displayInfo(_:)"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
+            landmarkName = "displayInfo()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -598,28 +598,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "two-half-password/Views/THTextView.swift"
-            timestampString = "456471311.30831"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "init(frame:textContainer:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "two-half-password/Views/THTextView.swift"
-            timestampString = "456450779.961904"
+            timestampString = "456473365.344928"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
             landmarkName = "init(frame:textContainer:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "two-half-password/Views/THTextView.swift"
+            timestampString = "456473365.344928"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "init(frame:textContainer:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "two-half-password/Views/THTextView.swift"
+            timestampString = "456473365.344928"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(frame:textContainer:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
+            timestampString = "456478782.509029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "644"
+            endingLineNumber = "644"
+            landmarkName = "setupNoteLayout()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
+            timestampString = "456478045.561373"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
+            landmarkName = "controlTextDidChange(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "two-half-password/Controllers/VaultItemDetailSubViewControllers/webforms_WebFormViewController.swift"
+            timestampString = "456478045.561373"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "408"
+            endingLineNumber = "408"
+            landmarkName = "didChangeFields()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

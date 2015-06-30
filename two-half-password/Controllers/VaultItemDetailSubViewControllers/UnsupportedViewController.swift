@@ -13,11 +13,11 @@ class UnsupportedViewController: VaultItemDetailSubViewController {
     
     @IBOutlet weak var rawJSONScrollView: NSScrollView!
     
-    override func displayInfo(dictionary: NSDictionary) {
+    override func displayInfo() {
     
         let rawJSONTextView = rawJSONScrollView.contentView.documentView as! NSTextView
         
-        rawJSONTextView.string = "\(dictionary)"
+        rawJSONTextView.string = "\(dictionaryCache)"
         
     }
     

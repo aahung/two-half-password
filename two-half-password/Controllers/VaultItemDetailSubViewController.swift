@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class VaultItemDetailSubViewController: NSViewController {
+class VaultItemDetailSubViewController: NSViewController, NSTextFieldDelegate, NSTextViewDelegate {
 
     // MARK: webforms.WebForm
     
@@ -18,10 +18,11 @@ class VaultItemDetailSubViewController: NSViewController {
     // @IBOutlet weak var rawJSONTextView: NSTextView!
     
     var item: VaultItem!
+    var dictionaryCache: NSDictionary!
     
-    func displayInfo(dictionary: NSDictionary) {
-        
-    }
+    func newItem() {fatalError()}
+    
+    func displayInfo() {fatalError()}
     
     func loadItem(item: VaultItem) {
         self.item = item
@@ -32,7 +33,8 @@ class VaultItemDetailSubViewController: NSViewController {
             // TODO: catch errors
         }
         let dictionary = info.valueForKey("decrypted") as! NSDictionary
-        displayInfo(dictionary)
+        dictionaryCache = dictionary
+        displayInfo()
     }
     
 }

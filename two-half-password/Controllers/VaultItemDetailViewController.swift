@@ -37,6 +37,25 @@ class VaultItemDetailViewController: NSViewController {
         }
     }
     
+    func newItem(type: String) {
+        for containerView in containerViews {
+            containerView.hidden = true
+        }
+        
+        switch (type) {
+        case "webforms.WebForm":
+            webforms_WebFormsContainerView.hidden = false
+        default:
+            unsupportedContainerView.hidden = false
+        }
+        
+        if subDetailViewControllers[type] == nil {
+            subDetailViewControllers["unsupported"]!.value?.newItem()
+        } else {
+            subDetailViewControllers[type]!.value?.newItem()
+        }
+    }
+    
     func showItem(item: VaultItem?) {
         self.item = item
         

@@ -14,6 +14,28 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
 
     // MARK: views
     
+    var _titleField: THTextField!
+    var titleField: THTextField! {
+        set {
+            _titleField = newValue
+        }
+        
+        get {
+            if _titleField == nil {
+                _titleField = THTextField(forAutoLayout: ())
+                _titleField.placeholderString = "Item title"
+                _titleField.font = NSFont.systemFontOfSize(20.0)
+                _titleField.autoRemoveConstraintsAffectingView()
+                _titleField.autoSetDimension(ALDimension.Height, toSize: 28.0)
+                _titleField.bordered = false
+                _titleField.drawsBackground = false
+                _titleField.delegate = self
+            }
+            
+            return _titleField
+        }
+    }
+    
     var _usernameContainerView: NSView!
     var usernameContainerView: NSView! {
         set {
@@ -55,6 +77,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         get {
             if _usernameField == nil {
                 _usernameField = THTextField(forAutoLayout: ())
+                _usernameField.delegate = self
             }
             
             return _usernameField
@@ -120,6 +143,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         get {
             if _passwordField == nil {
                 _passwordField = THSecureTextField(forAutoLayout: ())
+                _passwordField.delegate = self
             }
             
             return _passwordField
@@ -203,6 +227,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         get {
             if _websiteField == nil {
                 _websiteField = THTextField(forAutoLayout: ())
+                _websiteField.delegate = self
             }
             
             return _websiteField
@@ -286,9 +311,44 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         get {
             if _noteTextView == nil {
                 _noteTextView = THTextView(forAutoLayout: ())
+                _noteTextView.delegate = self
             }
             
             return _noteTextView
+        }
+    }
+    
+    var _resetButton: THButton!
+    var resetButton: THButton! {
+        set {
+            _resetButton = newValue
+        }
+        
+        get {
+            if _resetButton == nil {
+                _resetButton = THButton(forAutoLayout: ())
+                _resetButton.title = "Reset"
+                _resetButton.target = self
+                _resetButton.action = Selector("displayInfo")
+            }
+            
+            return _resetButton
+        }
+    }
+    
+    var _saveButton: THButton!
+    var saveButton: THButton! {
+        set {
+            _saveButton = newValue
+        }
+        
+        get {
+            if _saveButton == nil {
+                _saveButton = THButton(forAutoLayout: ())
+                _saveButton.title = "Save"
+            }
+            
+            return _saveButton
         }
     }
     
@@ -342,12 +402,36 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: websiteField.stringValue)!)
     }
     
+    // user did change the text
+    func didChangeFields() {
+        resetButton.hidden = false
+        saveButton.hidden = false
+    }
+    
+    override func controlTextDidChange(obj: NSNotification) {
+        didChangeFields()
+    }
+    
+    func textDidChange(notification: NSNotification) {
+        didChangeFields()
+    }
+    
     // MARK: overrides
     
-    override func displayInfo(dictionary: NSDictionary) {
+    override func newItem() {
+        dictionaryCache = [:]
+        displayInfo()
+    }
+    
+    override func displayInfo() {
+        // hide edit buttons when no changes made
+        resetButton.hidden = true
+        saveButton.hidden = true
+        
+        titleField.stringValue = item.title
         
         // fields
-        let fields = dictionary.valueForKey("fields") as! NSArray
+        let fields = dictionaryCache.valueForKey("fields") as! NSArray
         for field in fields {
             let name = (field as! NSDictionary).valueForKey("name") as! String
             let value = (field as! NSDictionary).valueForKey("value") as! String
@@ -359,8 +443,8 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         }
         
         // url, only showing one
-        if (dictionary.valueForKey("URLs") != nil) {
-            let urls = dictionary.valueForKey("URLs") as! NSArray
+        if (dictionaryCache.valueForKey("URLs") != nil) {
+            let urls = dictionaryCache.valueForKey("URLs") as! NSArray
             if urls.count > 0 {
                 let firstURL = urls[0] as! NSDictionary
                 let urlString = firstURL.valueForKey("url") as! String
@@ -376,8 +460,8 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         
         // note
         noteTextView.string = ""
-        if (dictionary.valueForKey("notesPlain") != nil) {
-            let notes = dictionary.valueForKey("notesPlain") as! String
+        if (dictionaryCache.valueForKey("notesPlain") != nil) {
+            let notes = dictionaryCache.valueForKey("notesPlain") as! String
             noteTextView.resetString(notes)
         }
     }
@@ -396,6 +480,8 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
     func resetAndSetupViews() {
         // remove 
 
+        titleField.removeFromSuperview()
+        
         usernameContainerView.removeFromSuperview()
         usernameLabel.removeFromSuperview()
         usernameField.removeFromSuperview()
@@ -417,8 +503,13 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         noteLabel.removeFromSuperview()
         noteTextView.removeFromSuperview()
 
+        resetButton.removeFromSuperview()
+        saveButton.removeFromSuperview()
+        
         // null
 
+        titleField = nil
+        
         usernameContainerView = nil
         usernameLabel = nil
         usernameField = nil
@@ -441,8 +532,12 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         noteTextView.containerView = nil
         noteTextView = nil
         
+        resetButton = nil
+        saveButton = nil
         // add back
 
+        view.addSubview(titleField)
+        
         view.addSubview(usernameContainerView)
         usernameContainerView.addSubview(usernameLabel)
         usernameContainerView.addSubview(usernameField)
@@ -463,11 +558,20 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         view.addSubview(noteContainerView)
         noteContainerView.addSubview(noteLabel)
         noteContainerView.addSubview(noteTextView.containerView)
+        
+        view.addSubview(resetButton)
+        view.addSubview(saveButton)
+    }
+    
+    func setupTitleLayout() {
+        titleField.autoSetDimension(ALDimension.Width, toSize: 200.0)
+        titleField.autoPinEdgeToSuperviewEdge(ALEdge.Top)
+        titleField.autoPinEdgeToSuperviewEdge(ALEdge.Leading, withInset: 110.0)
     }
     
     func setupUsernameLayout() {
-        usernameContainerView.autoSetDimension(ALDimension.Height, toSize: 40.0)
-        usernameContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Top)
+        usernameContainerView.autoSetDimension(ALDimension.Height, toSize: 35.0)
+        usernameContainerView.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: titleField)
         usernameContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Leading)
         usernameContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
         
@@ -485,7 +589,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
     }
     
     func setupPasswordLayout() {
-        passwordContainerView.autoSetDimension(ALDimension.Height, toSize: 40.0)
+        passwordContainerView.autoSetDimension(ALDimension.Height, toSize: 35.0)
         passwordContainerView.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: usernameContainerView)
         passwordContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Leading)
         passwordContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
@@ -505,7 +609,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
     }
 
     func setupWebsiteLayout() {
-        websiteContainerView.autoSetDimension(ALDimension.Height, toSize: 40.0)
+        websiteContainerView.autoSetDimension(ALDimension.Height, toSize: 35.0)
         websiteContainerView.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: passwordContainerView)
         websiteContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Leading)
         websiteContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
@@ -525,7 +629,7 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
     }
 
     func setupNoteLayout() {
-        noteContainerView.autoSetDimension(ALDimension.Height, toSize: 200.0)
+        noteContainerView.autoSetDimension(ALDimension.Height, toSize: 180.0)
         noteContainerView.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: websiteContainerView)
         noteContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Leading)
         noteContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
@@ -533,8 +637,8 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         noteLabel.autoSetDimension(ALDimension.Width, toSize: 100.0)
         noteLabel.autoPinEdge(ALEdge.Leading, toEdge: ALEdge.Leading, ofView: noteContainerView)
         
-        noteTextView.containerView.autoSetDimension(ALDimension.Width, toSize: 300.0)
-        noteTextView.containerView.autoSetDimension(ALDimension.Height, toSize: 200.0)
+        noteTextView.containerView.autoSetDimension(ALDimension.Width, toSize: 330.0)
+        noteTextView.containerView.autoSetDimension(ALDimension.Height, toSize: 170.0)
         noteTextView.containerView.autoPinEdge(ALEdge.Leading, toEdge: ALEdge.Trailing, ofView: noteLabel, withOffset: 10.0)
         
         // noteTextView.autoPinEdgesToSuperviewEdgesWithInsets(NSEdgeInsetsZero)
@@ -545,11 +649,20 @@ class webforms_WebFormViewController: VaultItemDetailSubViewController {
         }
     }
     
+    func setupEditLayout() {
+        saveButton.autoPinEdgeToSuperviewEdge(ALEdge.Bottom)
+        saveButton.autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
+        saveButton.autoPinEdge(ALEdge.Leading, toEdge: ALEdge.Trailing, ofView: resetButton, withOffset: 10.0)
+        resetButton.autoPinEdgeToSuperviewEdge(ALEdge.Bottom)
+    }
+    
     func setupLayouts() {
+        setupTitleLayout()
         setupUsernameLayout()
         setupPasswordLayout()
         setupWebsiteLayout()
         setupNoteLayout()
+        setupEditLayout()
     }
     
     override func updateViewConstraints() {

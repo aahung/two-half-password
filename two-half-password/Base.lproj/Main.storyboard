@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8121.17"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -823,7 +823,7 @@
                 </viewController>
                 <customObject id="3OA-9h-gMh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1099" y="9"/>
+            <point key="canvasLocation" x="-1065" y="91"/>
         </scene>
         <!--New item-->
         <scene sceneID="qfN-np-k0N">
@@ -879,9 +879,6 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
-                                        <connections>
-                                            <segue destination="lps-h9-4en" kind="modal" id="x5r-eL-6Ns"/>
-                                        </connections>
                                     </button>
                                 </endViews>
                                 <visibilityPriorities>
@@ -1443,17 +1440,17 @@
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N00-Wg-njM">
                                 <rect key="frame" x="20" y="20" width="410" height="260"/>
                                 <clipView key="contentView" id="uO8-aI-mh2">
-                                    <rect key="frame" x="1" y="1" width="408" height="258"/>
+                                    <rect key="frame" x="1" y="1" width="393" height="258"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="9xI-lf-znp">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="258"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="258"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="408" height="258"/>
+                                            <size key="minSize" width="393" height="258"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="408" height="258"/>
+                                            <size key="minSize" width="393" height="258"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -1464,7 +1461,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="b6g-aQ-5Fs">
-                                    <rect key="frame" x="393" y="1" width="16" height="258"/>
+                                    <rect key="frame" x="394" y="1" width="15" height="258"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

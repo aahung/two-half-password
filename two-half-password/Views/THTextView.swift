@@ -19,24 +19,22 @@ class THTextView: NSTextView {
         verticallyResizable = true
         horizontallyResizable = true
         allowsUndo = true
+        smartInsertDeleteEnabled = true
+        
+        autoresizingMask.insert(NSAutoresizingMaskOptions.ViewHeightSizable)
+        autoresizingMask.insert(NSAutoresizingMaskOptions.ViewWidthSizable)
         
         containerView = NSScrollView(frame: frameRect)
         containerView.hasVerticalScroller = true
         containerView.hasHorizontalScroller = false
+        containerView.usesPredominantAxisScrolling = false
+        containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.borderType = NSBorderType.BezelBorder
         
         containerView.documentView = self
         
-        autoPinEdgeToSuperviewEdge(ALEdge.Leading)
-        autoPinEdgeToSuperviewEdge(ALEdge.Trailing)
-        autoSetDimension(ALDimension.Height, toSize: 500.0)
-        
-        // containerView.autoresizingMask = NSAutoresizingMaskOptions.ViewHeightSizable
-        // containerView.autoresizingMask.insert(NSAutoresizingMaskOptions.ViewWidthSizable)
-        // containerView.translatesAutoresizingMaskIntoConstraints = true
-        
-        textContainer?.widthTracksTextView = true
-        textContainer?.heightTracksTextView = false
+        containerView.contentView.autoresizingMask.insert(NSAutoresizingMaskOptions.ViewHeightSizable)
+        containerView.contentView.autoresizingMask.insert(NSAutoresizingMaskOptions.ViewWidthSizable)
     }
     
     required init?(coder: NSCoder) {
@@ -54,11 +52,4 @@ class THTextView: NSTextView {
                             // if string is too long
         self.undoManager?.removeAllActions()
     }
-    
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
-
-        // Drawing code here.
-    }
-    
 }
