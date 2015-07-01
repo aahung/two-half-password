@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import PureLayout
 
 class Weak<T: AnyObject> {
     weak var value : T?
@@ -19,81 +20,59 @@ class VaultItemDetailViewController: NSViewController {
 
     var item: VaultItem?
     
-    // MARK: Container Views
-    @IBOutlet weak var webforms_WebFormsContainerView: NSView!
-    @IBOutlet weak var unsupportedContainerView: NSView!
+    var subDetailViewControllers = [String: VaultItemDetailSubViewController]()
     
-    var containerViews: [NSView]!
-    var subDetailViewControllers = [String: Weak<VaultItemDetailSubViewController>]()
+    @IBOutlet weak var containerView: NSView!
+    
+    func newItem(notification: NSNotification) {
+        print(notification)
+        
+        showItem(nil, type: notification.object as! String)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         
-        containerViews = [webforms_WebFormsContainerView, unsupportedContainerView]
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("newItem:"), name: "newItem", object: nil)
         
-        for containerView in containerViews {
-            containerView.hidden = true
+        
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let webform_WebFormViewController = storyboard.instantiateControllerWithIdentifier("webforms_WebFrom_detail") as! Webforms_WebFormViewController
+        subDetailViewControllers["webforms.WebForm"] = webform_WebFormViewController
+        
+        let unsupportedViewController = storyboard.instantiateControllerWithIdentifier("unsupported_detail") as! UnsupportedViewController
+        subDetailViewControllers["unsupported"] = unsupportedViewController
+    }
+    
+    func clearViews() {
+        for subView in containerView.subviews {
+            subView.removeFromSuperview()
         }
     }
     
-    func newItem(type: String) {
-        for containerView in containerViews {
-            containerView.hidden = true
-        }
-        
-        switch (type) {
-        case "webforms.WebForm":
-            webforms_WebFormsContainerView.hidden = false
-        default:
-            unsupportedContainerView.hidden = false
-        }
-        
-        if subDetailViewControllers[type] == nil {
-            subDetailViewControllers["unsupported"]!.value?.newItem()
-        } else {
-            subDetailViewControllers[type]!.value?.newItem()
-        }
-    }
-    
-    func showItem(item: VaultItem?) {
+    func showItem(item: VaultItem!) {
         self.item = item
         
-        guard (item != nil) else {
-            return
-        }
-        
-        for containerView in containerViews {
-            containerView.hidden = true
-        }
-        
-        switch (item!.type) {
-        case "webforms.WebForm":
-            webforms_WebFormsContainerView.hidden = false
-        default:
-            unsupportedContainerView.hidden = false
-        }
-        
-        if subDetailViewControllers[item!.type] == nil {
-            subDetailViewControllers["unsupported"]!.value?.loadItem(item!)
-        } else {
-            subDetailViewControllers[item!.type]!.value?.loadItem(item!)
-        }
-        
-        
+        showItem(item, type: item.type)
     }
     
-    override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
-        let id = segue.identifier
-        guard (id != nil) else {
-            return
+    func showItem(item: VaultItem?, type: String) {
+        
+        clearViews()
+        
+        var theView: NSView!
+        
+        if subDetailViewControllers[type] == nil {
+            theView = subDetailViewControllers["unsupported"]!.view;
+            subDetailViewControllers["unsupported"]!.item = item
+        } else {
+            theView = subDetailViewControllers[type]!.view;
+            subDetailViewControllers[type]!.item = item
         }
         
-        let vaultItemDetailSubViewController = segue.destinationController as! VaultItemDetailSubViewController
-        if id!.rangeOfString("itemEmbed-") != nil {
-            let type = id!.substringFromIndex(advance(id!.startIndex, 10))
-            subDetailViewControllers[type] = Weak<VaultItemDetailSubViewController>(value: vaultItemDetailSubViewController)
-        }
+        containerView.animator().addSubview(theView)
+    theView.autoPinEdgesToSuperviewEdgesWithInsets(NSEdgeInsetsZero)
     }
     
 }

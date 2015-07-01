@@ -14,6 +14,7 @@ class UnsupportedViewController: VaultItemDetailSubViewController {
     @IBOutlet weak var rawJSONScrollView: NSScrollView!
     
     override func displayInfo() {
+        super.displayInfo()
     
         let rawJSONTextView = rawJSONScrollView.contentView.documentView as! NSTextView
         
